@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "output_API.schema",
+  "title": "Pipeline output_API.JSON schema",
+  "type": "object",
+  "description": "Schema for pipeline's output_API.JSONs",
+  "properties": {
+    "samples": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^gs://.*\\.(bam|fastq)"
+        }
+      }
+    },
+    "metasheet": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "tumor": {"type": "string"},
+          "normal": {"type": "string"}
+        }
+      }
+    },
+    "instance_name": {
+      "type": "string",
+      "pattern": "[a-z]+"
+    },
+    "cores": {
+      "type": "number",
+      "enum": [32, 64, 96]
+    },
+    "disk_size": {
+      "description": "Disk size to use, in GB, default 500",
+      "type": "number"
+    },
+    "wes_commit": {
+      "description": "Specific wes commit string to use",
+      "type": "string",
+      "const": "44b17ff"
+    }
+  }
+}
+
+
+
+

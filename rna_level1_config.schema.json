@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "output_API.schema",
+  "title": "Pipeline output_API.JSON schema",
+  "type": "object",
+  "description": "Schema for pipeline's output_API.JSONs",
+  "properties": {
+    "metasheet": {
+      "type": "string",
+      "pattern": ".*\\.csv$"
+    },
+    "assembly": {
+      "type": "string",
+      "const": "hg38"
+    },
+    "ref": {
+      "type": "string",
+      "pattern": ".*\\.yaml$"
+    },
+    "mate": {
+      "type": "array"
+    },
+    "rsem": {
+      "type": "boolean"
+    },
+    "stranded": {
+      "type": "boolean"
+    },
+    "samples": {
+      "type": "object"
+    },
+    "runs": {
+      "type": "object"
+    }
+  }
+}
+
+
+
