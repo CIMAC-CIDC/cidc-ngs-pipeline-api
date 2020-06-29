@@ -1,0 +1,151 @@
+{
+    "id": [
+        {
+            "filter_hierarchy": "star/sorted_bam",
+            "file_path_template": "analysis/star/{id}/{id}.sorted.bam",
+            "inline_short_desc": "star alignment output",
+            "description": "file sorted_bam file sorted_bam file sorted_bam file",
+            "detail_level": "Analysis-Ready file"
+        },
+        {
+            "filter_hierarchy": "star/sorted_bam_index",
+            "file_path_template": "analysis/star/{id}/{id}.sorted.bam.bai",
+            "inline_short_desc": "sorted_bam_index file",
+            "description": "file sorted_bam_index file sorted_bam_index file sorted_bam_index file",
+            "detail_level": "Intermediate file"
+        },
+        {
+            "filter_hierarchy": "star/sorted_bam_stat_txt",
+            "file_path_template": "analysis/star/{id}/{id}.sorted.bam.stat.txt",
+            "inline_short_desc": "sorted_bam_stat_txt file",
+            "description": "file sorted_bam_stat_txt file sorted_bam_stat_txt file sorted_bam_stat_txt file",
+            "detail_level": "Intermediate file"
+        },
+        {
+            "filter_hierarchy": "star/downsampling_bam",
+            "file_path_template": "analysis/star/{id}/{id}_downsampling.bam",
+            "inline_short_desc": "downsampling_bam file",
+            "description": "file downsampling_bam file downsampling_bam file downsampling_bam file",
+            "detail_level": "Intermediate file"
+        },
+        {
+            "filter_hierarchy": "star/downsampling_bam_index",
+            "file_path_template": "analysis/star/{id}/{id}_downsampling.bam.bai",
+            "inline_short_desc": "downsampling_bam_index file",
+            "description": "file downsampling_bam_index file downsampling_bam_index file downsampling_bam_index file",
+            "detail_level": "Intermediate file"
+        },
+
+
+
+
+        {
+            "filter_hierarchy": "rseqc/downsampling_housekeeping_bam",
+            "file_path_template": "analysis/rseqc/{id}/{id}_downsampling_housekeeping.bam",
+            "inline_short_desc": "downsampling_housekeeping_bam file",
+            "description": "file downsampling_housekeeping_bam file downsampling_housekeeping_bam file downsampling_housekeeping_bam file",
+            "detail_level": "Intermediate file"
+        },
+        {
+            "filter_hierarchy": "rseqc/downsampling_housekeeping_bam_index",
+            "file_path_template": "analysis/rseqc/{id}/{id}_downsampling_housekeeping.bam.bai",
+            "inline_short_desc": "downsampling_housekeeping_bam_index file",
+            "description": "file downsampling_housekeeping_bam_index file downsampling_housekeeping_bam_index file downsampling_housekeeping_bam_index file",
+            "detail_level": "Intermediate file"
+        },
+        {
+            "filter_hierarchy": "rseqc/read_distrib",
+            "file_path_template": "analysis/rseqc/read_distrib/{id}/{id}.txt",
+            "inline_short_desc": "read distribution ouput",
+            "description": "file read_distrib file read_distrib file read_distrib file",
+            "detail_level": "Summary file"
+        },
+        {
+            "filter_hierarchy": "rseqc/tin_score_summary",
+            "file_path_template": "analysis/rseqc/tin_score/{id}/{id}.summary.txt",
+            "inline_short_desc": "tin_score_summary file",
+            "description": "file tin_score_summary file tin_score_summary file tin_score_summary file",
+            "detail_level": "Intermediate file"
+        },
+        {
+            "filter_hierarchy": "rseqc/tin_score",
+            "file_path_template": "analysis/rseqc/tin_score/{id}/{id}.tin_score.txt",
+            "inline_short_desc": "tin score output",
+            "description": "file tin_score file tin_score file tin_score file",
+            "detail_level": "Analysis-Ready file"
+        },
+
+
+
+        {
+            "filter_hierarchy": "salmon/quant_sf",
+            "file_path_template": "analysis/salmon/{id}/{id}.quant.sf",
+            "inline_short_desc": "quant_sf file",
+            "description": "file quant_sf file quant_sf file quant_sf file",
+            "detail_level": "Intermediate file"
+        },
+        {
+            "filter_hierarchy": "salmon/transcriptome_bam_log",
+            "file_path_template": "analysis/salmon/{id}/{id}.transcriptome.bam.log",
+            "inline_short_desc": "transcriptome_bam_log file",
+            "description": "file transcriptome_bam_log file transcriptome_bam_log file transcriptome_bam_log file",
+            "detail_level": "Intermediate file"
+        },
+        {
+            "filter_hierarchy": "salmon/aux_info_ambig_info_tsv",
+            "file_path_template": "analysis/salmon/{id}/aux_info/ambig_info.tsv",
+            "inline_short_desc": "aux_info_ambig_info_tsv file",
+            "description": "file aux_info_ambig_info_tsv file aux_info_ambig_info_tsv file aux_info_ambig_info_tsv file",
+            "detail_level": "Intermediate file"
+        },
+        {
+            "filter_hierarchy": "salmon/aux_info_expected_bias",
+            "file_path_template": "analysis/salmon/{id}/aux_info/expected_bias.gz",
+            "inline_short_desc": "aux_info_expected_bias file",
+            "description": "file aux_info_expected_bias file aux_info_expected_bias file aux_info_expected_bias file",
+            "detail_level": "Intermediate file"
+        },
+        {
+            "filter_hierarchy": "salmon/aux_info_fld",
+            "file_path_template": "analysis/salmon/{id}/aux_info/fld.gz",
+            "inline_short_desc": "aux_info_fld file",
+            "description": "file aux_info_fld file aux_info_fld file aux_info_fld file",
+            "detail_level": "Intermediate file"
+        },
+        {
+            "filter_hierarchy": "salmon/aux_info_meta_info",
+            "file_path_template": "analysis/salmon/{id}/aux_info/meta_info.json",
+            "inline_short_desc": "aux_info_meta_info file",
+            "description": "file aux_info_meta_info file aux_info_meta_info file aux_info_meta_info file",
+            "detail_level": "Intermediate file"
+        },
+        {
+            "filter_hierarchy": "salmon/aux_info_observed_bias",
+            "file_path_template": "analysis/salmon/{id}/aux_info/observed_bias.gz",
+            "inline_short_desc": "aux_info_observed_bias file",
+            "description": "file aux_info_observed_bias file aux_info_observed_bias file aux_info_observed_bias file",
+            "detail_level": "Intermediate file"
+        },
+        {
+            "filter_hierarchy": "salmon/aux_info_observed_bias_3p",
+            "file_path_template": "analysis/salmon/{id}/aux_info/observed_bias_3p.gz",
+            "inline_short_desc": "aux_info_observed_bias_3p file",
+            "description": "file aux_info_observed_bias_3p file aux_info_observed_bias_3p file aux_info_observed_bias_3p file",
+            "detail_level": "Intermediate file"
+        },
+        {
+            "filter_hierarchy": "salmon/cmd_info",
+            "file_path_template": "analysis/salmon/{id}/cmd_info.json",
+            "inline_short_desc": "cmd_info file",
+            "description": "file cmd_info file cmd_info file cmd_info file",
+            "detail_level": "Intermediate file"
+        },
+        {
+            "filter_hierarchy": "salmon/salmon_quant_log",
+            "file_path_template": "analysis/salmon/{id}/logs/salmon_quant.log",
+            "inline_short_desc": "salmon_quant_log file",
+            "description": "file salmon_quant_log file salmon_quant_log file salmon_quant_log file",
+            "detail_level": "Intermediate file"
+        }
+    ]
+}
