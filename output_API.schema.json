@@ -9,10 +9,12 @@
     "items": {
       "type": "object",
       "properties": {
-        "filter_hierarchy": {
+        "file_path_template": {
+          "description": "jinja-ish like template string, that describes where CLI tool expects a  pipeline result file",
           "type": "string"
         },
-        "file_path_template": {
+        "filter_hierarchy": {
+          "description": "path-like string, used in UI for nested facet filters",
           "type": "string"
         },
         "inline_short_desc": {
@@ -22,7 +24,15 @@
           "type": "string"
         },
         "detail_level": {
-          "type": "string"
+          "description": "TBD",
+          
+          "type": "string",
+          "enum": [
+            "Summary file",
+            "Analysis-Ready file",
+            "Intermediate file",
+            "Source file"
+          ]
         }
       }
     }
