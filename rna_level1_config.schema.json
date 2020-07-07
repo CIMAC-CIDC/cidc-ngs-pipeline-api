@@ -3,7 +3,7 @@
   "$id": "output_API.schema",
   "title": "Pipeline output_API.JSON schema",
   "type": "object",
-  "long_description": "Schema for pipeline's output_API.JSONs",
+  "description": "Schema for pipeline's output_API.JSONs",
   "properties": {
     "metasheet": {
       "type": "string",
