@@ -9,29 +9,30 @@
     "items": {
       "type": "object",
       "properties": {
+        "filter_group": {
+          "description": "Filter under which the file would appear during faceted search. It is the GCS-URI top-level hierarchy.",
+          "type": "string"
+        },
         "file_path_template": {
-          "description": "jinja-ish like template string, that describes where CLI tool expects a  pipeline result file",
+          "description": "Local file path template string, describes where the CLI expects a file to be located during upload.",
           "type": "string"
         },
-        "filter_hierarchy": {
-          "description": "path-like string, used in UI for nested facet filters",
+        "short_description": {
+          "description": "Short description, to appear on hover, not more than a sentence long.",
           "type": "string"
         },
-        "inline_short_desc": {
+        "long_description": {
+          "description": "Long description, to appear in file documentation page, 3-5 sentences long.",
           "type": "string"
         },
-        "description": {
-          "type": "string"
-        },
-        "detail_level": {
-          "description": "TBD",
-          
+        "file_purpose": {
+          "description": "Assigns a tag to for the file to show up in a particular file-browser view configuration.",
           "type": "string",
           "enum": [
-            "Summary file",
-            "Analysis-Ready file",
-            "Intermediate file",
-            "Source file"
+            "Source view",
+            "Analysis view",
+            "Clinical view",
+            "Miscellaneous"
           ]
         }
       }
