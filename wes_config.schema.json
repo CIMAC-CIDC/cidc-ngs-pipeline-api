@@ -3,7 +3,7 @@
   "$id": "output_API.schema",
   "title": "Pipeline output_API.JSON schema",
   "type": "object",
-  "description": "Schema for pipeline's output_API.JSONs",
+  "long_description": "Schema for pipeline's output_API.JSONs",
   "properties": {
     "samples": {
       "type": "object",
@@ -34,11 +34,11 @@
       "enum": [32, 64, 96]
     },
     "disk_size": {
-      "description": "Disk size to use, in GB, default 500",
+      "long_description": "Disk size to use, in GB, default 500",
       "type": "number"
     },
     "wes_commit": {
-      "description": "Specific wes commit string to use",
+      "long_description": "Specific wes commit string to use",
       "type": "string",
       "const": "44b17ff"
     }
