@@ -63,8 +63,8 @@
         {
             "filter_group": "rseqc/tin_score_summary",
             "file_path_template": "analysis/rseqc/tin_score/{id}/{id}.summary.txt",
-            "short_description": "tin_score_summary_file",
-            "long_description": "file tin_score_summary_file tin_score_summary_file tin_score_summary_file",
+            "short_description": "tin_score_summary file",
+            "long_description": "file tin_score_summary file tin_score_summary file tin_score_summary file",
             "file_purpose": "Miscellaneous"
         },
         {
