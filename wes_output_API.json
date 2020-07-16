@@ -50,6 +50,20 @@
             "file_purpose": "Intermediate file"
         },
         {
+            "filter_group": "neoantigen/mhc_class_II_epitopes",
+            "file_path_template": "analysis/neoantigen/{run id}/MHC_Class_II/{run id}.all_epitopes.tsv",
+            "short_description": "mhc_class_II_epitopes file",
+            "long_description": "mhc_class_II_epitopes file mhc_class_II_epitopes file",
+            "file_purpose": "Intermediate file"
+        },
+        {
+            "filter_group": "neoantigen/mhc_class_II_filtered_condensed_ranked",
+            "file_path_template": "analysis/neoantigen/{run id}/MHC_Class_II/{run id}.filtered.condensed.ranked.tsv",
+            "short_description": "mhc_class_II_filtered_condensed_ranked file",
+            "long_description": "mhc_class_II_filtered_condensed_ranked file mhc_class_II_filtered_condensed_ranked file",
+            "file_purpose": "Intermediate file"
+        },
+        {
             "filter_group": "somatic/vcf_tnscope_output",
             "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.output.vcf",
             "short_description": "vcf_tnscope_output file",
@@ -303,6 +317,13 @@
             "file_path_template": "analysis/optitype/{normal cimac id}/{normal cimac id}_result.tsv",
             "short_description": "optitype_result file",
             "long_description": "optitype_result file optitype_result file",
+            "file_purpose": "Intermediate file"
+        },
+        {
+            "filter_group": "optitype/xhla_report_hla",
+            "file_path_template": "analysis/xhla/{normal cimac id}/{normal cimac id}_report-{normal cimac id}-hla.json",
+            "short_description": "xhla_report_hla file",
+            "long_description": "xhla_report_hla file xhla_report_hla file",
             "file_purpose": "Intermediate file"
         }
     ]
