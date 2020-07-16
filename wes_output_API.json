@@ -1,309 +1,330 @@
 {
     "run id": [
         {
-            "filter_hierarchy": "germline/vcf_compare",
+            "filter_group": "germline/vcf_compare",
             "file_path_template": "analysis/germline/{run id}/{run id}_vcfcompare.txt",
-            "inline_short_desc": "vcf_compare file",
-            "description": "vcf_compare file vcf_compare file",
-            "detail_level": "Intermediate file"
+            "short_description": "vcf_compare file",
+            "long_description": "vcf_compare file vcf_compare file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "purity/optimal_purity_value",
+            "filter_group": "purity/optimal_purity_value",
             "file_path_template": "analysis/purity/{run id}/{run id}.optimalpurityvalue.txt",
-            "inline_short_desc": "optimal_purity_value file",
-            "description": "optimal_purity_value file optimal_purity_value file",
-            "detail_level": "Intermediate file"
+            "short_description": "optimal_purity_value file",
+            "long_description": "optimal_purity_value file optimal_purity_value file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "clonality/clonality_pyclone",
+            "filter_group": "clonality/clonality_pyclone",
             "file_path_template": "analysis/clonality/{run id}/{run id}_pyclone.tsv",
-            "inline_short_desc": "clonality_pyclone file",
-            "description": "clonality_pyclone file clonality_pyclone file",
-            "detail_level": "Intermediate file"
+            "short_description": "clonality_pyclone file",
+            "long_description": "clonality_pyclone file clonality_pyclone file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "copynumber/copynumber_cnv_calls",
+            "filter_group": "copynumber/copynumber_cnv_calls",
             "file_path_template": "analysis/copynumber/{run id}/{run id}_cnvcalls.txt",
-            "inline_short_desc": "copynumber_cnv_calls file",
-            "description": "copynumber_cnv_calls file copynumber_cnv_calls file",
-            "detail_level": "Intermediate file"
+            "short_description": "copynumber_cnv_calls file",
+            "long_description": "copynumber_cnv_calls file copynumber_cnv_calls file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "copynumber/copynumber_cnv_calls_tsv",
+            "filter_group": "copynumber/copynumber_cnv_calls_tsv",
             "file_path_template": "analysis/copynumber/{run id}/{run id}_cnvcalls.txt.tn.tsv",
-            "inline_short_desc": "copynumber_cnv_calls_tsv file",
-            "description": "copynumber_cnv_calls_tsv file copynumber_cnv_calls_tsv file",
-            "detail_level": "Intermediate file"
+            "short_description": "copynumber_cnv_calls_tsv file",
+            "long_description": "copynumber_cnv_calls_tsv file copynumber_cnv_calls_tsv file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "neoantigen/mhc_class_I_epitopes",
+            "filter_group": "neoantigen/mhc_class_I_epitopes",
             "file_path_template": "analysis/neoantigen/{run id}/MHC_Class_I/{run id}.all_epitopes.tsv",
-            "inline_short_desc": "mhc_class_I_epitopes file",
-            "description": "mhc_class_I_epitopes file mhc_class_I_epitopes file",
-            "detail_level": "Intermediate file"
+            "short_description": "mhc_class_I_epitopes file",
+            "long_description": "mhc_class_I_epitopes file mhc_class_I_epitopes file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "neoantigen/mhc_class_I_filtered_condensed_ranked",
+            "filter_group": "neoantigen/mhc_class_I_filtered_condensed_ranked",
             "file_path_template": "analysis/neoantigen/{run id}/MHC_Class_I/{run id}.filtered.condensed.ranked.tsv",
-            "inline_short_desc": "mhc_class_I_filtered_condensed_ranked file",
-            "description": "mhc_class_I_filtered_condensed_ranked file mhc_class_I_filtered_condensed_ranked file",
-            "detail_level": "Intermediate file"
+            "short_description": "mhc_class_I_filtered_condensed_ranked file",
+            "long_description": "mhc_class_I_filtered_condensed_ranked file mhc_class_I_filtered_condensed_ranked file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "somatic/vcf_tnscope_output",
+            "filter_group": "neoantigen/mhc_class_II_epitopes",
+            "file_path_template": "analysis/neoantigen/{run id}/MHC_Class_II/{run id}.all_epitopes.tsv",
+            "short_description": "mhc_class_II_epitopes file",
+            "long_description": "mhc_class_II_epitopes file mhc_class_II_epitopes file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "neoantigen/mhc_class_II_filtered_condensed_ranked",
+            "file_path_template": "analysis/neoantigen/{run id}/MHC_Class_II/{run id}.filtered.condensed.ranked.tsv",
+            "short_description": "mhc_class_II_filtered_condensed_ranked file",
+            "long_description": "mhc_class_II_filtered_condensed_ranked file mhc_class_II_filtered_condensed_ranked file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "somatic/vcf_tnscope_output",
             "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.output.vcf",
-            "inline_short_desc": "vcf_tnscope_output file",
-            "description": "vcf_tnscope_output file vcf_tnscope_output file",
-            "detail_level": "Intermediate file"
+            "short_description": "vcf_tnscope_output file",
+            "long_description": "vcf_tnscope_output file vcf_tnscope_output file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "somatic/maf_tnscope_output",
+            "filter_group": "somatic/maf_tnscope_output",
             "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.output.maf",
-            "inline_short_desc": "maf_tnscope_output file",
-            "description": "maf_tnscope_output file maf_tnscope_output file",
-            "detail_level": "Intermediate file"
+            "short_description": "maf_tnscope_output file",
+            "long_description": "maf_tnscope_output file maf_tnscope_output file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "somatic/vcf_tnscope_filter",
+            "filter_group": "somatic/vcf_tnscope_filter",
             "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.filter.vcf",
-            "inline_short_desc": "vcf_tnscope_filter file",
-            "description": "vcf_tnscope_filter file vcf_tnscope_filter file",
-            "detail_level": "Intermediate file"
+            "short_description": "vcf_tnscope_filter file",
+            "long_description": "vcf_tnscope_filter file vcf_tnscope_filter file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "somatic/maf_tnscope_filter",
+            "filter_group": "somatic/maf_tnscope_filter",
             "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.filter.maf",
-            "inline_short_desc": "maf_tnscope_filter file",
-            "description": "maf_tnscope_filter file maf_tnscope_filter file",
-            "detail_level": "Intermediate file"
+            "short_description": "maf_tnscope_filter file",
+            "long_description": "maf_tnscope_filter file maf_tnscope_filter file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "somatic/tnscope_exons_broad",
+            "filter_group": "somatic/tnscope_exons_broad",
             "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.filter.exons.broad.vcf.gz",
-            "inline_short_desc": "tnscope_exons_broad file",
-            "description": "tnscope_exons_broad file tnscope_exons_broad file",
-            "detail_level": "Intermediate file"
+            "short_description": "tnscope_exons_broad file",
+            "long_description": "tnscope_exons_broad file tnscope_exons_broad file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "somatic/tnscope_exons_mda",
+            "filter_group": "somatic/tnscope_exons_mda",
             "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.filter.exons.mda.vcf.gz",
-            "inline_short_desc": "tnscope_exons_mda file",
-            "description": "tnscope_exons_mda file tnscope_exons_mda file",
-            "detail_level": "Intermediate file"
+            "short_description": "tnscope_exons_mda file",
+            "long_description": "tnscope_exons_mda file tnscope_exons_mda file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "somatic/tnscope_exons_mocha",
+            "filter_group": "somatic/tnscope_exons_mocha",
             "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.filter.exons.mocha.vcf.gz",
-            "inline_short_desc": "tnscope_exons_mocha file",
-            "description": "tnscope_exons_mocha file tnscope_exons_mocha file",
-            "detail_level": "Intermediate file"
+            "short_description": "tnscope_exons_mocha file",
+            "long_description": "tnscope_exons_mocha file tnscope_exons_mocha file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "corealignments/tn_corealigned",
+            "filter_group": "corealignments/tn_corealigned",
             "file_path_template": "analysis/corealignments/{run id}/{run id}_tn_corealigned.bam",
-            "inline_short_desc": "tn_corealigned file",
-            "description": "tn_corealigned file tn_corealigned file",
-            "detail_level": "Intermediate file"
+            "short_description": "tn_corealigned file",
+            "long_description": "tn_corealigned file tn_corealigned file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "corealignments/tn_corealigned_index",
+            "filter_group": "corealignments/tn_corealigned_index",
             "file_path_template": "analysis/corealignments/{run id}/{run id}_tn_corealigned.bam.bai",
-            "inline_short_desc": "tn_corealigned_index file",
-            "description": "tn_corealigned_index file tn_corealigned_index file",
-            "detail_level": "Intermediate file"
+            "short_description": "tn_corealigned_index file",
+            "long_description": "tn_corealigned_index file tn_corealigned_index file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "metrics/all_summaries",
+            "filter_group": "metrics/all_summaries",
             "file_path_template": "analysis/metrics/all_sample_summaries.txt",
-            "inline_short_desc": "all_summaries file",
-            "description": "all_summaries file all_summaries file",
-            "detail_level": "Intermediate file"
+            "short_description": "all_summaries file",
+            "long_description": "all_summaries file all_summaries file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "report/wes_version",
+            "filter_group": "report/wes_version",
             "file_path_template": "analysis/report/wes_version.txt",
-            "inline_short_desc": "wes_version file",
-            "description": "wes_version file wes_version file",
-            "detail_level": "Intermediate file"
+            "short_description": "wes_version file",
+            "long_description": "wes_version file wes_version file",
+            "file_purpose": "Miscellaneous"
         }
     ],
     "tumor cimac id": [
         {
-            "filter_hierarchy": "alignment/align_recalibrated",
+            "filter_group": "alignment/align_recalibrated",
             "file_path_template": "analysis/align/{tumor cimac id}/{tumor cimac id}_recalibrated.bam",
-            "inline_short_desc": "align_recalibrated file",
-            "description": "align_recalibrated file align_recalibrated file",
-            "detail_level": "Intermediate file"
+            "short_description": "align_recalibrated file",
+            "long_description": "align_recalibrated file align_recalibrated file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "alignment/align_recalibrated_index",
+            "filter_group": "alignment/align_recalibrated_index",
             "file_path_template": "analysis/align/{tumor cimac id}/{tumor cimac id}_recalibrated.bam.bai",
-            "inline_short_desc": "align_recalibrated_index file",
-            "description": "align_recalibrated_index file align_recalibrated_index file",
-            "detail_level": "Intermediate file"
+            "short_description": "align_recalibrated_index file",
+            "long_description": "align_recalibrated_index file align_recalibrated_index file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "alignment/align_sorted_dedup",
+            "filter_group": "alignment/align_sorted_dedup",
             "file_path_template": "analysis/align/{tumor cimac id}/{tumor cimac id}.sorted.dedup.bam",
-            "inline_short_desc": "align_sorted_dedup file",
-            "description": "align_sorted_dedup file align_sorted_dedup file",
-            "detail_level": "Intermediate file"
+            "short_description": "align_sorted_dedup file",
+            "long_description": "align_sorted_dedup file align_sorted_dedup file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "alignment/align_sorted_dedup_index",
+            "filter_group": "alignment/align_sorted_dedup_index",
             "file_path_template": "analysis/align/{tumor cimac id}/{tumor cimac id}.sorted.dedup.bam.bai",
-            "inline_short_desc": "align_sorted_dedup_index file",
-            "description": "align_sorted_dedup_index file align_sorted_dedup_index file",
-            "detail_level": "Intermediate file"
+            "short_description": "align_sorted_dedup_index file",
+            "long_description": "align_sorted_dedup_index file align_sorted_dedup_index file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "metrics/coverage_metrics",
+            "filter_group": "metrics/coverage_metrics",
             "file_path_template": "analysis/metrics/{tumor cimac id}/{tumor cimac id}_coverage_metrics.txt",
-            "inline_short_desc": "coverage_metrics file",
-            "description": "coverage_metrics file coverage_metrics file",
-            "detail_level": "Intermediate file"
+            "short_description": "coverage_metrics file",
+            "long_description": "coverage_metrics file coverage_metrics file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "metrics/target_metrics",
+            "filter_group": "metrics/target_metrics",
             "file_path_template": "analysis/metrics/{tumor cimac id}/{tumor cimac id}_target_metrics.txt",
-            "inline_short_desc": "target_metrics file",
-            "description": "target_metrics file target_metrics file",
-            "detail_level": "Intermediate file"
+            "short_description": "target_metrics file",
+            "long_description": "target_metrics file target_metrics file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "metrics/coverage_metrics_summary",
+            "filter_group": "metrics/coverage_metrics_summary",
             "file_path_template": "analysis/metrics/{tumor cimac id}/{tumor cimac id}_coverage_metrics.sample_summary.txt",
-            "inline_short_desc": "coverage_metrics_summary file",
-            "description": "coverage_metrics_summary file coverage_metrics_summary file",
-            "detail_level": "Intermediate file"
+            "short_description": "coverage_metrics_summary file",
+            "long_description": "coverage_metrics_summary file coverage_metrics_summary file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "metrics/target_metrics_summary",
+            "filter_group": "metrics/target_metrics_summary",
             "file_path_template": "analysis/metrics/{tumor cimac id}/{tumor cimac id}_target_metrics.sample_summary.txt",
-            "inline_short_desc": "target_metrics_summary file",
-            "description": "target_metrics_summary file target_metrics_summary file",
-            "detail_level": "Intermediate file"
+            "short_description": "target_metrics_summary file",
+            "long_description": "target_metrics_summary file target_metrics_summary file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "metrics/mosdepth_region_dist_broad",
+            "filter_group": "metrics/mosdepth_region_dist_broad",
             "file_path_template": "analysis/metrics/{tumor cimac id}/{tumor cimac id}.broad.mosdepth.region.dist.txt",
-            "inline_short_desc": "mosdepth_region_dist_broad file",
-            "description": "mosdepth_region_dist_broad file mosdepth_region_dist_broad file",
-            "detail_level": "Intermediate file"
+            "short_description": "mosdepth_region_dist_broad file",
+            "long_description": "mosdepth_region_dist_broad file mosdepth_region_dist_broad file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "metrics/mosdepth_region_dist_mda",
+            "filter_group": "metrics/mosdepth_region_dist_mda",
             "file_path_template": "analysis/metrics/{tumor cimac id}/{tumor cimac id}.mda.mosdepth.region.dist.txt",
-            "inline_short_desc": "mosdepth_region_dist_mda file",
-            "description": "mosdepth_region_dist_mda file mosdepth_region_dist_mda file",
-            "detail_level": "Intermediate file"
+            "short_description": "mosdepth_region_dist_mda file",
+            "long_description": "mosdepth_region_dist_mda file mosdepth_region_dist_mda file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "metrics/mosdepth_region_dist_mocha",
+            "filter_group": "metrics/mosdepth_region_dist_mocha",
             "file_path_template": "analysis/metrics/{tumor cimac id}/{tumor cimac id}.mocha.mosdepth.region.dist.txt",
-            "inline_short_desc": "mosdepth_region_dist_mocha file",
-            "description": "mosdepth_region_dist_mocha file mosdepth_region_dist_mocha file",
-            "detail_level": "Intermediate file"
+            "short_description": "mosdepth_region_dist_mocha file",
+            "long_description": "mosdepth_region_dist_mocha file mosdepth_region_dist_mocha file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "optitype/optitype_result",
+            "filter_group": "optitype/optitype_result",
             "file_path_template": "analysis/optitype/{tumor cimac id}/{tumor cimac id}_result.tsv",
-            "inline_short_desc": "optitype_result file",
-            "description": "optitype_result file optitype_result file",
-            "detail_level": "Intermediate file"
+            "short_description": "optitype_result file",
+            "long_description": "optitype_result file optitype_result file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "optitype/xhla_report_hla",
+            "filter_group": "optitype/xhla_report_hla",
             "file_path_template": "analysis/xhla/{tumor cimac id}/{tumor cimac id}_report-{tumor cimac id}-hla.json",
-            "inline_short_desc": "xhla_report_hla file",
-            "description": "xhla_report_hla file xhla_report_hla file",
-            "detail_level": "Intermediate file"
+            "short_description": "xhla_report_hla file",
+            "long_description": "xhla_report_hla file xhla_report_hla file",
+            "file_purpose": "Miscellaneous"
         }
     ],
     "normal cimac id": [
         {
-            "filter_hierarchy": "alignment/align_recalibrated",
+            "filter_group": "alignment/align_recalibrated",
             "file_path_template": "analysis/align/{normal cimac id}/{normal cimac id}_recalibrated.bam",
-            "inline_short_desc": "align_recalibrated file",
-            "description": "align_recalibrated file align_recalibrated file",
-            "detail_level": "Intermediate file"
+            "short_description": "align_recalibrated file",
+            "long_description": "align_recalibrated file align_recalibrated file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "alignment/align_recalibrated_index",
+            "filter_group": "alignment/align_recalibrated_index",
             "file_path_template": "analysis/align/{normal cimac id}/{normal cimac id}_recalibrated.bam.bai",
-            "inline_short_desc": "align_recalibrated_index file",
-            "description": "align_recalibrated_index file align_recalibrated_index file",
-            "detail_level": "Intermediate file"
+            "short_description": "align_recalibrated_index file",
+            "long_description": "align_recalibrated_index file align_recalibrated_index file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "alignment/align_sorted_dedup",
+            "filter_group": "alignment/align_sorted_dedup",
             "file_path_template": "analysis/align/{normal cimac id}/{normal cimac id}.sorted.dedup.bam",
-            "inline_short_desc": "align_sorted_dedup file",
-            "description": "align_sorted_dedup file align_sorted_dedup file",
-            "detail_level": "Intermediate file"
+            "short_description": "align_sorted_dedup file",
+            "long_description": "align_sorted_dedup file align_sorted_dedup file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "alignment/align_sorted_dedup_index",
+            "filter_group": "alignment/align_sorted_dedup_index",
             "file_path_template": "analysis/align/{normal cimac id}/{normal cimac id}.sorted.dedup.bam.bai",
-            "inline_short_desc": "align_sorted_dedup_index file",
-            "description": "align_sorted_dedup_index file align_sorted_dedup_index file",
-            "detail_level": "Intermediate file"
+            "short_description": "align_sorted_dedup_index file",
+            "long_description": "align_sorted_dedup_index file align_sorted_dedup_index file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "metrics/coverage_metrics",
+            "filter_group": "metrics/coverage_metrics",
             "file_path_template": "analysis/metrics/{normal cimac id}/{normal cimac id}_coverage_metrics.txt",
-            "inline_short_desc": "coverage_metrics file",
-            "description": "coverage_metrics file coverage_metrics file",
-            "detail_level": "Intermediate file"
+            "short_description": "coverage_metrics file",
+            "long_description": "coverage_metrics file coverage_metrics file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "metrics/target_metrics",
+            "filter_group": "metrics/target_metrics",
             "file_path_template": "analysis/metrics/{normal cimac id}/{normal cimac id}_target_metrics.txt",
-            "inline_short_desc": "target_metrics file",
-            "description": "target_metrics file target_metrics file",
-            "detail_level": "Intermediate file"
+            "short_description": "target_metrics file",
+            "long_description": "target_metrics file target_metrics file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "metrics/coverage_metrics_summary",
+            "filter_group": "metrics/coverage_metrics_summary",
             "file_path_template": "analysis/metrics/{normal cimac id}/{normal cimac id}_coverage_metrics.sample_summary.txt",
-            "inline_short_desc": "coverage_metrics_summary file",
-            "description": "coverage_metrics_summary file coverage_metrics_summary file",
-            "detail_level": "Intermediate file"
+            "short_description": "coverage_metrics_summary file",
+            "long_description": "coverage_metrics_summary file coverage_metrics_summary file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "metrics/target_metrics_summary",
+            "filter_group": "metrics/target_metrics_summary",
             "file_path_template": "analysis/metrics/{normal cimac id}/{normal cimac id}_target_metrics.sample_summary.txt",
-            "inline_short_desc": "target_metrics_summary file",
-            "description": "target_metrics_summary file target_metrics_summary file",
-            "detail_level": "Intermediate file"
+            "short_description": "target_metrics_summary file",
+            "long_description": "target_metrics_summary file target_metrics_summary file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "metrics/mosdepth_region_dist_broad",
+            "filter_group": "metrics/mosdepth_region_dist_broad",
             "file_path_template": "analysis/metrics/{normal cimac id}/{normal cimac id}.broad.mosdepth.region.dist.txt",
-            "inline_short_desc": "mosdepth_region_dist_broad file",
-            "description": "mosdepth_region_dist_broad file mosdepth_region_dist_broad file",
-            "detail_level": "Intermediate file"
+            "short_description": "mosdepth_region_dist_broad file",
+            "long_description": "mosdepth_region_dist_broad file mosdepth_region_dist_broad file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "metrics/mosdepth_region_dist_mda",
+            "filter_group": "metrics/mosdepth_region_dist_mda",
             "file_path_template": "analysis/metrics/{normal cimac id}/{normal cimac id}.mda.mosdepth.region.dist.txt",
-            "inline_short_desc": "mosdepth_region_dist_mda file",
-            "description": "mosdepth_region_dist_mda file mosdepth_region_dist_mda file",
-            "detail_level": "Intermediate file"
+            "short_description": "mosdepth_region_dist_mda file",
+            "long_description": "mosdepth_region_dist_mda file mosdepth_region_dist_mda file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "metrics/mosdepth_region_dist_mocha",
+            "filter_group": "metrics/mosdepth_region_dist_mocha",
             "file_path_template": "analysis/metrics/{normal cimac id}/{normal cimac id}.mocha.mosdepth.region.dist.txt",
-            "inline_short_desc": "mosdepth_region_dist_mocha file",
-            "description": "mosdepth_region_dist_mocha file mosdepth_region_dist_mocha file",
-            "detail_level": "Intermediate file"
+            "short_description": "mosdepth_region_dist_mocha file",
+            "long_description": "mosdepth_region_dist_mocha file mosdepth_region_dist_mocha file",
+            "file_purpose": "Miscellaneous"
         },
         {
-            "filter_hierarchy": "optitype/optitype_result",
+            "filter_group": "optitype/optitype_result",
             "file_path_template": "analysis/optitype/{normal cimac id}/{normal cimac id}_result.tsv",
-            "inline_short_desc": "optitype_result file",
-            "description": "optitype_result file optitype_result file",
-            "detail_level": "Intermediate file"
+            "short_description": "optitype_result file",
+            "long_description": "optitype_result file optitype_result file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "optitype/xhla_report_hla",
+            "file_path_template": "analysis/xhla/{normal cimac id}/{normal cimac id}_report-{normal cimac id}-hla.json",
+            "short_description": "xhla_report_hla file",
+            "long_description": "xhla_report_hla file xhla_report_hla file",
+            "file_purpose": "Miscellaneous"
         }
     ]
 }
