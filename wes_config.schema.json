@@ -37,6 +37,10 @@
       "description": "Disk size to use, in GB, default 750",
       "type": "number"
     },
+    "somatic_caller": {
+      "description": "Somatic variant caller to use, choose from {tnsnv, tnhaplotyper2, tnscope (default)}",
+      "enum": ['tnsnv','tnhaplotyper2','tnscope']
+    },      
     "cimac_center": {
       "description": "CIMAC center the samples associate with, i.e. broad, mocha, or mda",
       "enum": ['broad','mocha','mda']
