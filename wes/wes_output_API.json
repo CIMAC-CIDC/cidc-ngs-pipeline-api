@@ -1,19 +1,3 @@
-['analysis/somatic/{run id}/{run id}_{caller}.output.vcf.gz', 'somatic variants: vcf file of somatic variants', 'somatic/vcf file']
-['analysis/somatic/{run id}/{run id}_{caller}.filter.vcf.gz', 'somatic variants: vcf file of filtered somatic variants', 'somatic/filtered vcf file']
-['analysis/somatic/{run id}/{run id}_{caller}.filter.maf', 'somatic variants: maf file of filtered somatic variants', 'somatic/filtered maf file']
-['analysis/germline/{run id}/{run id}_vcfcompare.txt', 'somatic variants: overlap of somatic and germline variants', 'somatic/variant overlap']
-['analysis/report2/somatic_variants/tumor_mutational_burden.tsv', 'somatic variants: report file of tumor mutational burden in tumor and normal', 'somatic/tmb report']
-['analysis/report2/neoantigens/HLA_results.tsv', 'hla: report file of combined MHC class I and II results', 'HLA/hla report']
-['analysis/neoantigen/{run id}/combined/{run id}.filtered.tsv', 'neaontigen: list of predicted neoantigens', 'neoantigen/neoantigen list']
-['analysis/report2/copy_number/tumor_purity.tsv', 'tumor purity: tumor purity analysis results', 'purity/purityresults']
-['analysis/align/{normal cimac id}/{normal cimac id}.sorted.dedup.bam', 'deduplicated bam: bam file with deduplicated reads', 'align/deduplicated_bam']
-['analysis/align/{normal cimac id}/{normal cimac id}.sorted.dedup.bam.bai', 'deduplicated bam index: bam index file for deduplicated bam', 'align/deduplicated_bam']
-['analysis/optitype/{normal cimac id}/{normal cimac id}_result.tsv', 'hla: MHC Class I results (using optitype)', 'HLA/optitype']
-['analysis/xhla/{normal cimac id}/report-{normal cimac id}-hla.json', 'hla: MHC Class I and II results (using xhla)', 'HLA/xhla']
-['analysis/align/{normal cimac id}/{normal cimac id}.sorted.dedup.bam', 'deduplicated bam: bam file with deduplicated reads', 'align/deduplicated_bam']
-['analysis/align/{normal cimac id}/{normal cimac id}.sorted.dedup.bam.bai', 'deduplicated bam index: bam index file for deduplicated bam', 'align/deduplicated_bam']
-['analysis/optitype/{normal cimac id}/{normal cimac id}_result.tsv', 'hla: MHC Class I results (using optitype)', 'HLA/optitype']
-['analysis/xhla/{normal cimac id}/report-{normal cimac id}-hla.json', 'hla: MHC Class I and II results (using xhla)', 'HLA/xhla']
 {
     "run id": [
         {

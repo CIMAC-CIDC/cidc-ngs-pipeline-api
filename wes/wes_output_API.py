@@ -11,7 +11,7 @@ class Wesfile():
         """Given a file path, initializes this object to that path
         NOTE: filepath may include snakemake wildcards, e.g.
         analysis/germline/{run id}/{run id}_vcfcompare.txt"""
-        print(file_tuple)
+        #print(file_tuple)
         self.file_path_template = file_tuple[0]
         self.short_description = file_tuple[1]
         self.long_description = file_tuple[1]
