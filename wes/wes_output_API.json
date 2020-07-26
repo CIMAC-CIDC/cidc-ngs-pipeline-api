@@ -55,6 +55,20 @@
             "long_description": "tumor purity: tumor purity analysis results",
             "filter_group": "purity/purityresults",
             "file_purpose": "Analysis file"
+        },
+        {
+            "file_path_template": "analysis/report.zip",
+            "short_description": "wes report: wes summary html report",
+            "long_description": "wes report: wes summary html report",
+            "filter_group": "report/report",
+            "file_purpose": "Analysis file"
+        },
+        {
+            "file_path_template": "analysis/report/wes_meta/02_wes_run_version.tsv",
+            "short_description": "wes pipeline version",
+            "long_description": "wes pipeline version",
+            "filter_group": "report/wes version",
+            "file_purpose": "Analysis file"
         }
     ],
     "normal cimac id": [

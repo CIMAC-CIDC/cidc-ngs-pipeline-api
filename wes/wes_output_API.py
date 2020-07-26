@@ -70,6 +70,12 @@ run_files = [["analysis/somatic/{run}/{run}_{caller}.output.vcf.gz",
              ["analysis/report2/copy_number/tumor_purity.tsv", #PURITY
               "tumor purity: tumor purity analysis results",
               "purity/purityresults"],
+             ["analysis/report.zip",
+              "wes report: wes summary html report",
+              "report/report"],
+             ["analysis/report/wes_meta/02_wes_run_version.tsv",
+              "wes pipeline version",
+              "report/wes version"],
              ]
 
 run_id_files = [Wesfile(r) for r in map(lambda x: evalWildcards(x, "{run}", "{run id}"), run_files)]
