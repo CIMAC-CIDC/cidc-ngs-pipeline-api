@@ -4,130 +4,221 @@
             "file_path_template": "analysis/somatic/{run id}/{run id}_{caller}.output.vcf.gz",
             "short_description": "somatic variants: vcf file of somatic variants",
             "long_description": "somatic variants: vcf file of somatic variants",
-            "filter_group": "somatic/vcf file",
+            "filter_group": "somatic",
+            "file_purpose": "Analysis file"
+        },
+        {
+            "file_path_template": "analysis/somatic/{run id}/{run id}_{caller}.output.maf",
+            "short_description": "somatic variants: maf file of somatic variants",
+            "long_description": "somatic variants: maf file of somatic variants",
+            "filter_group": "somatic",
             "file_purpose": "Analysis file"
         },
         {
             "file_path_template": "analysis/somatic/{run id}/{run id}_{caller}.filter.vcf.gz",
             "short_description": "somatic variants: vcf file of filtered somatic variants",
             "long_description": "somatic variants: vcf file of filtered somatic variants",
-            "filter_group": "somatic/filtered vcf file",
+            "filter_group": "somatic",
             "file_purpose": "Analysis file"
         },
         {
             "file_path_template": "analysis/somatic/{run id}/{run id}_{caller}.filter.maf",
             "short_description": "somatic variants: maf file of filtered somatic variants",
             "long_description": "somatic variants: maf file of filtered somatic variants",
-            "filter_group": "somatic/filtered maf file",
+            "filter_group": "somatic",
+            "file_purpose": "Analysis file"
+        },
+        {
+            "file_path_template": "analysis/somatic/{run id}/{run id}_{caller}.filter.exons.{center}.vcf.gz",
+            "short_description": "somatic variants: vcf file of filtered somatic variants from center target regions",
+            "long_description": "somatic variants: vcf file of filtered somatic variants from center target regions",
+            "filter_group": "somatic",
             "file_purpose": "Analysis file"
         },
         {
             "file_path_template": "analysis/germline/{run id}/{run id}_vcfcompare.txt",
             "short_description": "somatic variants: overlap of somatic and germline variants",
             "long_description": "somatic variants: overlap of somatic and germline variants",
-            "filter_group": "somatic/variant overlap",
+            "filter_group": "somatic",
             "file_purpose": "Analysis file"
         },
         {
             "file_path_template": "analysis/report2/somatic_variants/tumor_mutational_burden.tsv",
             "short_description": "somatic variants: report file of tumor mutational burden in tumor and normal",
             "long_description": "somatic variants: report file of tumor mutational burden in tumor and normal",
-            "filter_group": "somatic/tmb report",
+            "filter_group": "somatic",
             "file_purpose": "Analysis file"
         },
         {
             "file_path_template": "analysis/report2/neoantigens/HLA_results.tsv",
             "short_description": "hla: report file of combined MHC class I and II results",
             "long_description": "hla: report file of combined MHC class I and II results",
-            "filter_group": "HLA/hla report",
+            "filter_group": "HLA",
             "file_purpose": "Analysis file"
         },
         {
             "file_path_template": "analysis/neoantigen/{run id}/combined/{run id}.filtered.tsv",
             "short_description": "neaontigen: list of predicted neoantigens",
             "long_description": "neaontigen: list of predicted neoantigens",
-            "filter_group": "neoantigen/neoantigen list",
+            "filter_group": "neoantigen",
             "file_purpose": "Analysis file"
         },
         {
-            "file_path_template": "analysis/report2/copy_number/tumor_purity.tsv",
+            "file_path_template": "analysis/purity/{run id}/{run id}.optimalpurityvalue.txt",
             "short_description": "tumor purity: tumor purity analysis results",
             "long_description": "tumor purity: tumor purity analysis results",
-            "filter_group": "purity/purityresults",
+            "filter_group": "purity",
+            "file_purpose": "Analysis file"
+        },
+        {
+            "file_path_template": "analysis/clonality/{run id}/{run id}_pyclone.tsv",
+            "short_description": "tumor clonality: tumor clonality analysis results",
+            "long_description": "tumor clonality: tumor clonality analysis results",
+            "filter_group": "clonality",
+            "file_purpose": "Analysis file"
+        },
+        {
+            "file_path_template": "analysis/copynumber/{run id}/{run id}_cnvcalls.txt",
+            "short_description": "copynumber: copynumber analysis results",
+            "long_description": "copynumber: copynumber analysis results",
+            "filter_group": "copynumber",
+            "file_purpose": "Analysis file"
+        },
+        {
+            "file_path_template": "analysis/copynumber/{run id}/{run id}_cnvcalls.txt.tn.tsv",
+            "short_description": "copynumber: copynumber analysis results",
+            "long_description": "copynumber: copynumber analysis results",
+            "filter_group": "copynumber",
             "file_purpose": "Analysis file"
         },
         {
             "file_path_template": "analysis/report.zip",
             "short_description": "wes report: wes summary html report",
             "long_description": "wes report: wes summary html report",
-            "filter_group": "report/report",
+            "filter_group": "report",
             "file_purpose": "Analysis file"
         },
         {
             "file_path_template": "analysis/report/wes_meta/02_wes_run_version.tsv",
             "short_description": "wes pipeline version",
             "long_description": "wes pipeline version",
-            "filter_group": "report/wes version",
+            "filter_group": "report",
+            "file_purpose": "Analysis file"
+        },
+        {
+            "file_path_template": "analysis/report/config.yaml",
+            "short_description": "wes pipeline config file",
+            "long_description": "wes pipeline config file",
+            "filter_group": "report",
+            "file_purpose": "Analysis file"
+        },
+        {
+            "file_path_template": "analysis/report/metasheet.csv",
+            "short_description": "wes pipeline metasheet file",
+            "long_description": "wes pipeline metasheet file",
+            "filter_group": "report",
             "file_purpose": "Analysis file"
         }
     ],
     "normal cimac id": [
         {
             "file_path_template": "analysis/align/{normal cimac id}/{normal cimac id}.sorted.dedup.bam",
-            "short_description": "deduplicated bam: bam file with deduplicated reads",
-            "long_description": "deduplicated bam: bam file with deduplicated reads",
-            "filter_group": "align/deduplicated_bam",
-            "file_purpose": "Analysis file"
+            "short_description": "alignment: bam file with deduplicated reads",
+            "long_description": "alignment: bam file with deduplicated reads",
+            "filter_group": "alignment",
+            "file_purpose": "Source file"
         },
         {
             "file_path_template": "analysis/align/{normal cimac id}/{normal cimac id}.sorted.dedup.bam.bai",
-            "short_description": "deduplicated bam index: bam index file for deduplicated bam",
-            "long_description": "deduplicated bam index: bam index file for deduplicated bam",
-            "filter_group": "align/deduplicated_bam",
-            "file_purpose": "Analysis file"
+            "short_description": "alignment: bam index file for deduplicated bam",
+            "long_description": "alignment: bam index file for deduplicated bam",
+            "filter_group": "alignment",
+            "file_purpose": "Source file"
         },
         {
             "file_path_template": "analysis/optitype/{normal cimac id}/{normal cimac id}_result.tsv",
             "short_description": "hla: MHC Class I results (using optitype)",
             "long_description": "hla: MHC Class I results (using optitype)",
-            "filter_group": "HLA/optitype",
+            "filter_group": "HLA",
             "file_purpose": "Analysis file"
         },
         {
             "file_path_template": "analysis/xhla/{normal cimac id}/report-{normal cimac id}-hla.json",
             "short_description": "hla: MHC Class I and II results (using xhla)",
             "long_description": "hla: MHC Class I and II results (using xhla)",
-            "filter_group": "HLA/xhla",
+            "filter_group": "HLA",
+            "file_purpose": "Analysis file"
+        },
+        {
+            "file_path_template": "analysis/metrics/{normal cimac id}/{normal cimac id}_coverage_metrics.txt",
+            "short_description": "coverage: global coverage file",
+            "long_description": "coverage: global coverage file",
+            "filter_group": "coverage",
+            "file_purpose": "Analysis file"
+        },
+        {
+            "file_path_template": "analysis/metrics/{normal cimac id}/{normal cimac id}_target_metrics.txt",
+            "short_description": "coverage: target region coverage file",
+            "long_description": "coverage: target region coverage file",
+            "filter_group": "coverage",
+            "file_purpose": "Analysis file"
+        },
+        {
+            "file_path_template": "analysis/metrics/{normal cimac id}/{normal cimac id}_coverage_metrics.sample_summary.txt",
+            "short_description": "coverage: global coverage summary file",
+            "long_description": "coverage: global coverage summary file",
+            "filter_group": "coverage",
             "file_purpose": "Analysis file"
         }
     ],
     "tumor cimac id": [
         {
-            "file_path_template": "analysis/align/{normal cimac id}/{normal cimac id}.sorted.dedup.bam",
-            "short_description": "deduplicated bam: bam file with deduplicated reads",
-            "long_description": "deduplicated bam: bam file with deduplicated reads",
-            "filter_group": "align/deduplicated_bam",
-            "file_purpose": "Analysis file"
+            "file_path_template": "analysis/align/{tumor cimac id}/{tumor cimac id}.sorted.dedup.bam",
+            "short_description": "alignment: bam file with deduplicated reads",
+            "long_description": "alignment: bam file with deduplicated reads",
+            "filter_group": "alignment",
+            "file_purpose": "Source file"
         },
         {
-            "file_path_template": "analysis/align/{normal cimac id}/{normal cimac id}.sorted.dedup.bam.bai",
-            "short_description": "deduplicated bam index: bam index file for deduplicated bam",
-            "long_description": "deduplicated bam index: bam index file for deduplicated bam",
-            "filter_group": "align/deduplicated_bam",
-            "file_purpose": "Analysis file"
+            "file_path_template": "analysis/align/{tumor cimac id}/{tumor cimac id}.sorted.dedup.bam.bai",
+            "short_description": "alignment: bam index file for deduplicated bam",
+            "long_description": "alignment: bam index file for deduplicated bam",
+            "filter_group": "alignment",
+            "file_purpose": "Source file"
         },
         {
-            "file_path_template": "analysis/optitype/{normal cimac id}/{normal cimac id}_result.tsv",
+            "file_path_template": "analysis/optitype/{tumor cimac id}/{tumor cimac id}_result.tsv",
             "short_description": "hla: MHC Class I results (using optitype)",
             "long_description": "hla: MHC Class I results (using optitype)",
-            "filter_group": "HLA/optitype",
+            "filter_group": "HLA",
             "file_purpose": "Analysis file"
         },
         {
-            "file_path_template": "analysis/xhla/{normal cimac id}/report-{normal cimac id}-hla.json",
+            "file_path_template": "analysis/xhla/{tumor cimac id}/report-{tumor cimac id}-hla.json",
             "short_description": "hla: MHC Class I and II results (using xhla)",
             "long_description": "hla: MHC Class I and II results (using xhla)",
-            "filter_group": "HLA/xhla",
+            "filter_group": "HLA",
+            "file_purpose": "Analysis file"
+        },
+        {
+            "file_path_template": "analysis/metrics/{tumor cimac id}/{tumor cimac id}_coverage_metrics.txt",
+            "short_description": "coverage: global coverage file",
+            "long_description": "coverage: global coverage file",
+            "filter_group": "coverage",
+            "file_purpose": "Analysis file"
+        },
+        {
+            "file_path_template": "analysis/metrics/{tumor cimac id}/{tumor cimac id}_target_metrics.txt",
+            "short_description": "coverage: target region coverage file",
+            "long_description": "coverage: target region coverage file",
+            "filter_group": "coverage",
+            "file_purpose": "Analysis file"
+        },
+        {
+            "file_path_template": "analysis/metrics/{tumor cimac id}/{tumor cimac id}_coverage_metrics.sample_summary.txt",
+            "short_description": "coverage: global coverage summary file",
+            "long_description": "coverage: global coverage summary file",
+            "filter_group": "coverage",
             "file_purpose": "Analysis file"
         }
     ]
