@@ -1,3 +1,3 @@
-## WES CIMAC-CIDC Pipeline description
+## WES (Whole Exome Sequencing) Pipeline Description
 
 TBD
