@@ -1,0 +1,27 @@
+{
+    "run id": [
+        {
+            "filter_group": "report",
+            "file_path_template": "{run id}_report.tar.gz",
+            "short_description": "tcr-seq report",
+            "long_description": "tcr-seq tcr report file",
+            "file_purpose": "Report"
+        }
+    ],
+    "sample id": [
+        {
+            "filter_group": "umi_count",
+            "file_path_template": "umi_count/{sample id}_TRB_clones_umi_count.csv",
+            "short_description": "trb umi_count",
+            "long_description": "tcr-seq tcr trb clones umi_count file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "umi_count",
+            "file_path_template": "umi_count/{sample id}_TRA_clones_umi_count.csv",
+            "short_description": "tra umi_count",
+            "long_description": "tcr-seq tcr tra clones umi_count file",
+            "file_purpose": "Miscellaneous"
+        }
+    ]
+}
