@@ -96,11 +96,11 @@ run_files = [["analysis/somatic/{run}/{run}_{caller}.output.vcf.gz",
               "somatic variants: overlap of somatic and germline variants",
               "VCFtools is used to compare somatic and germline variants.  The file shows the number of common variants, somatic only, and germline only variants.",
               "somatic"],
-             ["analysis/report2/somatic_variants/tumor_mutational_burden.tsv",
+             ["analysis/report/somatic_variants/07_tumor_mutational_burden.tsv",
               "somatic variants: report file of tumor mutational burden in tumor and normal",
               "This file derived from the VCFtools somatic and germline variants comparison result and is displayed in a readable manner.  The file reports the number of somatic/tumor only variants, germline/normal only variants, the number of shared variants, and the percent overlap (using the total number of somatic variants as the denominator).",
               "somatic"],
-             ["analysis/report2/neoantigens/HLA_results.tsv", #HLA
+             ["analysis/report/neoantigens/01_HLA_results.tsv", #HLA
               "hla: report file of combined MHC class I and II results",
               "This file reports the MHC class I and II results.  The class I alleles are derived from the OptiType results and the class II alleles come from the xHLA results. ",
               "HLA"],
@@ -124,7 +124,7 @@ run_files = [["analysis/somatic/{run}/{run}_{caller}.output.vcf.gz",
               "copynumber: copynumber analysis results",
               "Segmented copy number variation file using Sentieon CNV algorithm",
               "copynumber"],
-             ["analysis/report.zip", #REPORT
+             ["analysis/report.tar.gz", #REPORT
               "wes report: wes summary html report",
               "WES summary report",
               "report"],
