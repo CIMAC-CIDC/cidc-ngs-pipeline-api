@@ -35,10 +35,10 @@ validator = jsonschema.Draft7Validator(schema)
 def api_paths():
     """Get the path to every output_API.json in the schemas directory"""
     return (
-        os.path.join(i[0], f)
-        for i in os.walk(BASE_DIR)
-        for f in i[2]
-        if f.endswith(API_ENDING)
+        os.path.join(dname, fname)
+        for dname, _, files  in os.walk(BASE_DIR)
+            for fname in files
+                if fname.endswith(API_ENDING)
     )
 
 
