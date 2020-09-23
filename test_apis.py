@@ -35,10 +35,10 @@ validator = jsonschema.Draft7Validator(schema)
 def api_paths():
     """Get the path to every output_API.json in the schemas directory"""
     return (
-        os.path.join(i[0], f)
-        for i in os.walk(BASE_DIR)
-        for f in i[2]
-        if f.endswith(API_ENDING)
+        os.path.join(dname, fname)
+        for dname, _, files in os.walk(BASE_DIR)
+            for fnames in files
+                if fname.endswith(API_ENDING)
     )
 
 
@@ -47,6 +47,13 @@ def test_api(api_path):
     """Ensure the output_API.json file conforms to schema"""
     with open(api_path, "r") as f:
         try:
-            validator.validate(load(f))
+            api = load(f)
         except Exception as e:
-            raise Exception(f"Failed loading json {SCHEMA_PATH}") from e
+            raise Exception(f"Failed loading json {api_path}") from e
+
+    errors = validator.iter_errors(api) # Iterable[ValidationError]
+
+    for e in errors:
+        print(e) in errors
+    if len(errors):
+        raise Exception(f"{len(errors)} problems were found") from errors[0]
