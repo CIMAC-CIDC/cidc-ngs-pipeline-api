@@ -57,4 +57,4 @@ def test_api(api_path):
         print(e) in errors
         num_errors += 1
     if num_errors:
-        raise Exception(f"{num_errors} problems were found") from errors[0]
+        raise Exception(f"{num_errors} problems were found")
