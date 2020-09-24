@@ -52,7 +52,9 @@ def test_api(api_path):
 
     errors = validator.iter_errors(api)  # Iterable[ValidationError]
 
+    num_errors = 0
     for e in errors:
         print(e) in errors
-    if len(errors):
-        raise Exception(f"{len(errors)} problems were found") from errors[0]
+        num_errors += 1
+    if num_errors:
+        raise Exception(f"{num_errors} problems were found") from errors[0]
