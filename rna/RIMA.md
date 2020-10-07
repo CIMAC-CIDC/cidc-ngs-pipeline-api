@@ -35,28 +35,31 @@ sample- and cohort-level to enable interactive visualization.
 
 #### environment: rna(stable)
 
-| Software         | Version | Source                | Notes |
-|:-----------------|:--------|:----------------------|:------|
-| conda            | 4.8.3   | bioconda              |       |
-| snakemake        | 5.5.4   | bioconda              |       |
-| samtools         | 1.9     | bioconda              |       |
-| python           | 3.6.8   | conda-forge           |       |
-| r                | 3.5.1   | conda-forge           |       |
-| star             | 2.6.1   | bioconda              |       |
-| star-fusion      | 1.5.0   | bioconda              |       |
-| salmon           | 1.3.0   | bioconda              |       |
-| samtools         | 1.7     | bioconda              |       |
-| picard           | 2.20.4  | bioconda              |       |
-| bedtools         | 2.26.0  | bioconda              |       |
-| rseqc            | 3.0.1   | bioconda              |       |
-| centrifuge       | 1.0.4   | bioconda              |       |
-| optitype         | 1.3.2   | conda-forge bioconda  |       |
-| numpy            | 1.19.1  | conda-forge           |       |
-| pvactools        | 1.5.7   | conda-forge r         |       |
-| multiqc          | 1.10.0  | bioconda              |       |
-| perl             | 5.26.2  | conda-forge           |       |
-| ensembl-vep      | 96.0.   | git                   |       |
-| VCFTools         | 0.1.16  | bioconda              |       |
-| bcftools         | 1.9     | bioconda              |       |
-| htslib           | 1.9     | bioconda              |       |
-| VarScan          | 2.4.4   | conda-forge           |       |
+| Software         | Version | Source                | Notes                             |
+|:-----------------|:--------|:----------------------|:----------------------------------|
+| conda            | 4.8.3   | bioconda              | Environment Management            |
+| Snakemake        | 5.5.4   | bioconda              | Pipeline Management               |
+| python           | 3.6.8   | conda-forge           | Scripting  Language               |
+| numpy            | 1.19.1  | conda-forge           | python library                    |
+| perl             | 5.26.2  | conda-forge           | Scripting Language                |
+| r                | 3.5.1   | conda-forge           | Scripting Language                |
+| multiqc          | 1.10.0  | pip                   | Result Reporting System           |
+| star             | 2.6.1   | bioconda              | Read Alignment                    |
+| star-fusion      | 1.5.0   | bioconda              | Fusion Transcripts                |
+| samtools         | 1.9     | bioconda              | Alignment Utility                 |
+| salmon           | 1.3.0   | bioconda              | Gene Quantification               |
+| picard           | 2.20.4  | bioconda              | Utility tool for aligned files    |
+| bedtools         | 2.26.0  | bioconda              | Utility tool for aligned files    |
+| VCFTools         | 0.1.16  | bioconda              | VCF Manipulation                  |
+| bcftools         | 1.9     | bioconda              | BCF Manipulation                  |
+| rseqc            | 3.0.1   | bioconda              | Quality Check                     |
+| limma            | 3.42.0  | bioconductor          | Batch Removal                     |
+| deseq2           | 1.26.0  | bioconductor          | Differential Expression Analysis  |
+| ensembl-vep      | 96.0.   | git                   | Variant Annotation                |
+| VarScan2         | 2.4.4   | conda-forge           | Mutation Calling                  |
+| MSISensor2       | 0.1     | git                   | Microsatellite Instability        |
+| TRUST4           | 1.0.0   | git                   | Immune repertoire analysis        |
+| arcasHLA         | 1.3.2   | conda-forge bioconda  | HLA Typing.                       |
+| TIDEpy           | 1.3.6   | git                   | Immune response prediction        |
+| pvactools        | 1.5.7   | conda-forge r         | Neoantigen prediction             |
+| centrifuge       | 1.0.4   | bioconda              | Microbiome                        |
