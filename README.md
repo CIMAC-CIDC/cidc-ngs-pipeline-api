@@ -12,10 +12,14 @@ Repository structure:
 │   ├── rna.md
 │   ├── rna_level1_config.schema.json
 │   └── rna_level1_output_API.json
+├── chips
+│   ├── chips.md
+│   └── chips_output_API.json
 └── wes
     ├── wes.md
     ├── wes_config.schema.json
     └── wes_output_API.json
+    
 ```
 
 
