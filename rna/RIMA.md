@@ -33,7 +33,7 @@ sample- and cohort-level to enable interactive visualization.
 
 ### Tools
 
-#### environment: rna(stable)
+#### Environment: rna
 
 | Software         | Version | Source                | Notes                             |
 |:-----------------|:--------|:----------------------|:----------------------------------|
