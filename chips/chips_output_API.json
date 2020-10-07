@@ -33,7 +33,7 @@
             "file_path_template": "analysis/metrics/{run id}.{replicate}/{run id}.{replicate}_metrics_summary.json",
             "short_description": "quality control summary file",
             "long_description": "quality control summary file including mapping statistics, PBC, Frip, conservation, contamination statistics",
-            "file_purpose": "Quality Control Metrics"
+            "file_purpose": "Miscellaneous"
         }
     ],
     "cimac id": [
