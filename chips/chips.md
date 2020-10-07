@@ -1,6 +1,6 @@
 ## CHIPS ATAC-seq Pipeline Description
 
-The CHIPS pipeline is designed to perform robust quality control and reproducible processing of the chromatin profile sequencing data derived from ChIP-seq, DNase-seq, and ATAC-seq. The CHIPS pipeline includes procedures such as read alignment, peak calling, motif finding, and putative target prediction. The inputs to the pipeline are FASTQ/BAM format DNA sequence read files. The analysis process is split into three levels: Level 1 (read alignment), Level 2 (quality control) and Level 3 (downstream analysis). The pipeline itself is encoded in the workflow language Snakemake and executed in a conda environment using the Google Cloud Compute Engine.
+The CHIPS pipeline is designed to perform robust quality control and reproducible processing of the chromatin profile sequencing data derived from ChIP-seq, DNase-seq, and ATAC-seq. The CHIPS pipeline includes procedures such as read alignment, peak calling, motif finding, and putative target prediction. The inputs to the pipeline are FASTQ/BAM format DNA sequence read files. The analysis process is split into three main components: read alignment, quality control and downstream analysis. The pipeline itself is encoded in the workflow language [Snakemake](https://snakemake.readthedocs.io/) and executed in a conda environment using the Google Cloud Compute Engine.
 
 The main components of the CHIPs ATAC-seq pipline are:
 
