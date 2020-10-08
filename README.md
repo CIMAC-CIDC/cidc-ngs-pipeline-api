@@ -10,8 +10,8 @@ Repository structure:
 ├── output_API.schema.json
 ├── rna
 │   ├── rna.md
-│   ├── rna_level1_config.schema.json
-│   └── rna_level1_output_API.json
+│   ├── rna_config.schema.json
+│   └── rna_output_API.json
 ├── chips
 │   ├── chips.md
 │   └── chips_output_API.json
