@@ -26,6 +26,10 @@ python3 -m http.server & python3 -m webbrowser -n "http://0.0.0.0:8000"
 
 The report is viewable at http://0.0.0.0:8000, which should pop up automatically.
 
+### TCR-seq Workflow
+
+![](https://raw.githubusercontent.com/CIMAC-CIDC/cidc-ngs-pipeline-api/tcr/tcr/TCRseq.png)
+
 ### Information in Report
 
 * Cohort and sample level 
@@ -37,10 +41,11 @@ The report is viewable at http://0.0.0.0:8000, which should pop up automatically
         * Top clonotypes
 * Intracohort Analysis & Information Table
     * Raw Diversity 
-    * Shannon Entropy Measure, 1 / Shannon Entropy Measure
+    * Entropy, 1/Entropy, Normalized Entropy
     * Gini Coefficient
     * Gini-Simpson Index
     * Inverse Simpson Index
     * Chao1 Index
+    * Clonal Proportionality Information
     * Average CDR3 Length
     * Unique CDR3 Count
