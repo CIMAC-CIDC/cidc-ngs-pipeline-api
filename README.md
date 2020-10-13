@@ -12,9 +12,17 @@ Repository structure:
 │   ├── rna.md
 │   ├── rna_config.schema.json
 │   └── rna_output_API.json
+│   └── imgs
+|       └── RIMA.png
 ├── chips
 │   ├── chips.md
 │   └── chips_output_API.json
+│   └── imgs
+|       └── chips.png
+├── tcr
+│   ├── tcr.md
+│   └── imgs
+|       └── TCRseq.png
 └── wes
     ├── wes.md
     ├── wes_config.schema.json
