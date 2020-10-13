@@ -16,6 +16,8 @@ Repository structure:
 ├── chips
 │   ├── chips.md
 │   └── chips_output_API.json
+│   └── imgs
+|       └── chips.png
 ├── tcr
 │   ├── tcr.md
 │   └── TCRseq.png
