@@ -1,0 +1,151 @@
+{
+    "id": [
+        {
+            "filter_group": "alignment",
+            "file_path_template": "analysis/star/{id}/{id}.sorted.bam",
+            "short_description": "star alignment output",
+            "long_description": "file sorted_bam file sorted_bam file sorted_bam file",
+            "file_purpose": "Analysis view"
+        },
+        {
+            "filter_group": "alignment",
+            "file_path_template": "analysis/star/{id}/{id}.sorted.bam.bai",
+            "short_description": "sorted_bam_index file",
+            "long_description": "file sorted_bam_index file sorted_bam_index file sorted_bam_index file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "alignment",
+            "file_path_template": "analysis/star/{id}/{id}.sorted.bam.stat.txt",
+            "short_description": "sorted_bam_stat_txt file",
+            "long_description": "file sorted_bam_stat_txt file sorted_bam_stat_txt file sorted_bam_stat_txt file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "alignment",
+            "file_path_template": "analysis/star/{id}/{id}_downsampling.bam",
+            "short_description": "downsampling_bam file",
+            "long_description": "file downsampling_bam file downsampling_bam file downsampling_bam file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "alignment",
+            "file_path_template": "analysis/star/{id}/{id}_downsampling.bam.bai",
+            "short_description": "downsampling_bam_index file",
+            "long_description": "file downsampling_bam_index file downsampling_bam_index file downsampling_bam_index file",
+            "file_purpose": "Miscellaneous"
+        },
+
+
+
+
+        {
+            "filter_group": "quality",
+            "file_path_template": "analysis/rseqc/{id}/{id}_downsampling_housekeeping.bam",
+            "short_description": "downsampling_housekeeping_bam file",
+            "long_description": "file downsampling_housekeeping_bam file downsampling_housekeeping_bam file downsampling_housekeeping_bam file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "quality",
+            "file_path_template": "analysis/rseqc/{id}/{id}_downsampling_housekeeping.bam.bai",
+            "short_description": "downsampling_housekeeping_bam_index file",
+            "long_description": "file downsampling_housekeeping_bam_index file downsampling_housekeeping_bam_index file downsampling_housekeeping_bam_index file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "quality",
+            "file_path_template": "analysis/rseqc/read_distrib/{id}/{id}.txt",
+            "short_description": "read distribution ouput",
+            "long_description": "file read_distrib file read_distrib file read_distrib file",
+            "file_purpose": "Clinical view"
+        },
+        {
+            "filter_group": "quality",
+            "file_path_template": "analysis/rseqc/tin_score/{id}/{id}.summary.txt",
+            "short_description": "tin_score_summary file",
+            "long_description": "file tin_score_summary file tin_score_summary file tin_score_summary file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "quality",
+            "file_path_template": "analysis/rseqc/tin_score/{id}/{id}.tin_score.txt",
+            "short_description": "tin score output",
+            "long_description": "file tin_score file tin_score file tin_score file",
+            "file_purpose": "Analysis view"
+        },
+
+
+
+        {
+            "filter_group": "gene-quantification",
+            "file_path_template": "analysis/salmon/{id}/{id}.quant.sf",
+            "short_description": "quant_sf file",
+            "long_description": "file quant_sf file quant_sf file quant_sf file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "gene-quantification",
+            "file_path_template": "analysis/salmon/{id}/{id}.transcriptome.bam.log",
+            "short_description": "transcriptome_bam_log file",
+            "long_description": "file transcriptome_bam_log file transcriptome_bam_log file transcriptome_bam_log file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "gene-quantification",
+            "file_path_template": "analysis/salmon/{id}/aux_info/ambig_info.tsv",
+            "short_description": "aux_info_ambig_info_tsv file",
+            "long_description": "file aux_info_ambig_info_tsv file aux_info_ambig_info_tsv file aux_info_ambig_info_tsv file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "gene-quantification",
+            "file_path_template": "analysis/salmon/{id}/aux_info/expected_bias.gz",
+            "short_description": "aux_info_expected_bias file",
+            "long_description": "file aux_info_expected_bias file aux_info_expected_bias file aux_info_expected_bias file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "gene-quantification",
+            "file_path_template": "analysis/salmon/{id}/aux_info/fld.gz",
+            "short_description": "aux_info_fld file",
+            "long_description": "file aux_info_fld file aux_info_fld file aux_info_fld file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "gene-quantification",
+            "file_path_template": "analysis/salmon/{id}/aux_info/meta_info.json",
+            "short_description": "aux_info_meta_info file",
+            "long_description": "file aux_info_meta_info file aux_info_meta_info file aux_info_meta_info file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "gene-quantification",
+            "file_path_template": "analysis/salmon/{id}/aux_info/observed_bias.gz",
+            "short_description": "aux_info_observed_bias file",
+            "long_description": "file aux_info_observed_bias file aux_info_observed_bias file aux_info_observed_bias file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "gene-quantification",
+            "file_path_template": "analysis/salmon/{id}/aux_info/observed_bias_3p.gz",
+            "short_description": "aux_info_observed_bias_3p file",
+            "long_description": "file aux_info_observed_bias_3p file aux_info_observed_bias_3p file aux_info_observed_bias_3p file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "gene-quantification",
+            "file_path_template": "analysis/salmon/{id}/cmd_info.json",
+            "short_description": "cmd_info file",
+            "long_description": "file cmd_info file cmd_info file cmd_info file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "gene-quantification",
+            "file_path_template": "analysis/salmon/{id}/logs/salmon_quant.log",
+            "short_description": "salmon_quant_log file",
+            "long_description": "file salmon_quant_log file salmon_quant_log file salmon_quant_log file",
+            "file_purpose": "Miscellaneous"
+        }
+    ]
+}
