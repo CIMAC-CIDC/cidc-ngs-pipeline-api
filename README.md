@@ -7,29 +7,38 @@ Repository structure:
 ```
 .
 ├── README.md
-├── output_API.schema.json
-├── rna
-│   ├── rna.md
-│   ├── rna_config.schema.json
-│   └── rna_output_API.json
-│   └── imgs
-|       └── RIMA.png
-├── chips
-│   ├── chips.md
-│   └── chips_output_API.json
-│   └── imgs
-|       └── chips.png
-├── tcr
-│   ├── tcr.md
-│   └── imgs
-|       └── TCRseq.png
-└── wes
-    ├── wes.md
-    ├── wes_config.schema.json
-    └── wes_output_API.json
+├── cidc_ngs_pipeline_api
+│   ├── output_API.schema.json
+│   ├── rna
+│   │   ├── rna.md
+│   │   ├── rna_config.schema.json
+│   │   ├── rna_output_API.json
+│   │   └── imgs
+│   |       └── RIMA.png
+│   ├── chips
+│   │   ├── chips.md
+│   │   ├── chips_output_API.json
+│   │   └── imgs
+│   |       └── chips.png
+│   ├── tcr
+│   │   ├── tcr.md
+│   │   └── imgs
+│   |       └── TCRseq.png
+│   └── wes
+│       ├── wes.md
+│       ├── wes_config.schema.json
+│       └── wes_output_API.json
+├── tests
+│   └── test_apis.py
+├── requirements.dev.txt
+├── requirements.txt
+├── setup.cfg
+├── setup.py
+└── .travis.yml
     
 ```
 
+## cidc_ngs_pipeline_api module
 
 * The `output_API.schema.json` file defines the schema structure:
     - `filter_group`: Filter under which the file would appear during faceted search. It is the GCS-URI top-level hierarchy
