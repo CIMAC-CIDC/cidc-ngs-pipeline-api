@@ -13,10 +13,10 @@ script:
 after_script:
   - coverage xml
   - ./cc-test-reporter after-build -t coverage.py --exit-code $TRAVIS_TEST_RESULT
-# deploy:
-#   provider: pypi
-#   # TODO: should this be on a shared CIDC account?
-#   username: jlurye-ksg
-#   password: $PYPI_PASSWORD
-#   on:
-#     branch: master
+deploy:
+  provider: pypi
+  # TODO: should this be on a shared CIDC account?
+  username: jlurye-ksg
+  password: $PYPI_PASSWORD
+  on:
+    branch: automation
