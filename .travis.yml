@@ -8,7 +8,7 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 script:
-  - pytest --cov=. -v
+  - python -m pytest --cov=. -v
   - black --check . --target-version=py36
 after_script:
   - coverage xml
