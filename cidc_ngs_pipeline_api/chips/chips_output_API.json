@@ -11,14 +11,14 @@
             "filter_group": "peaks/sorted_summit",
             "file_path_template": "analysis/peaks/{run id}.{replicate}/{run id}.{replicate}_sorted_summit.bed",
             "short_description": "Peak summit called by MACS2",
-            "long_description": "Peak summit called by MACS2 Peak summit called by MACS2",
+            "long_description": "MACS2-called location with the highest fragment pileup aka the summit",
             "file_purpose": "Analysis view"
         },
         {
             "filter_group": "peaks/sorted_narrowPeak",
             "file_path_template": "analysis/peaks/{run id}.{replicate}/{run id}.{replicate}_sorted_peaks.narrowPeak",
             "short_description": "narrowPeak called by MACS2",
-            "long_description": "arrowPeak called by MACS2 arrowPeak called by MACS2",
+            "long_description": "MACS2-called peak locations, summits, p-, and q-values in BED6+4 format",
             "file_purpose": "Analysis view"
         },
         {
