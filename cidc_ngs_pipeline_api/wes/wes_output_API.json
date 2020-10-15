@@ -315,15 +315,15 @@
         {
             "filter_group": "optitype/optitype_result",
             "file_path_template": "analysis/optitype/{normal cimac id}/{normal cimac id}_result.tsv",
-            "short_description": "optitype_result file",
-            "long_description": "optitype_result file optitype_result file",
+            "short_description": "hla: MHC Class I results (using OptiType)",
+            "long_description": "Predicted MHC Class I alleles using the Optitype software (https://github.com/FRED-2/OptiType).  Chromosome 6 reads from the deduplicated bam file were extracted and fed into the Optitype prediction algorithm.",
             "file_purpose": "Miscellaneous"
         },
         {
             "filter_group": "optitype/xhla_report_hla",
             "file_path_template": "analysis/xhla/{normal cimac id}/{normal cimac id}_report-{normal cimac id}-hla.json",
-            "short_description": "hla: MHC Class I results (using OptiType)",
-            "long_description": "Predicted MHC Class I alleles using the Optitype software (https://github.com/FRED-2/OptiType).  Chromosome 6 reads from the deduplicated bam file were extracted and fed into the Optitype prediction algorithm.",
+            "short_description": "hla: MHC Class I and II results (using xhla)",
+            "long_description": "Predicted MHC Class II and II results using the xHLA software(https://github.com/humanlongevity/HLA).  Chromosome 6 reads from the deduplicated bam file were extracted and fed into the xHLA prediction algorithm.",
             "file_purpose": "Miscellaneous"
         }
     ]
