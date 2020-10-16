@@ -23,10 +23,14 @@ def test_api(schema):
     errors = list(validator.iter_errors(schema))  # Iterable[ValidationError]
 
     # check that long_description isn't just short_description repeated
-    if "run_id" not in schema: # exclude wes
+    if "run id" not in schema:  # exclude wes
         for k, v in schema.items():
             for n, d in enumerate(v):
-                if not d["long_description"].replace(d["short_description"], "").strip():
+                if (
+                    not d["long_description"]
+                    .replace(d["short_description"], "")
+                    .strip()
+                ):
                     errors.append(
                         f"/{k}/{n} {d['file_path_template']} needs a long_description"
                     )
