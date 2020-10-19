@@ -35,6 +35,4 @@ def test_api(schema):
                         f"/{k}/{n} {d['file_path_template']} needs a long_description"
                     )
 
-    num_errors = len(errors)
-    if num_errors:
-        raise Exception(f"{num_errors} problems were found:" + "\n" + "\n".join(errors))
+    assert len(errors) == 0, "\n".join(errors)
