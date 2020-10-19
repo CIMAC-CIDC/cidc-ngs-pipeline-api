@@ -8,8 +8,16 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 script:
-  - pytest --cov=. -v
+  - python -m pytest --cov=. -v
   - black --check . --target-version=py36
 after_script:
   - coverage xml
   - ./cc-test-reporter after-build -t coverage.py --exit-code $TRAVIS_TEST_RESULT
+# deploy:
+#   provider: pypi
+#   # TODO: should this be on a shared CIDC account?
+#   username: jlurye-ksg
+#   password: $PYPI_PASSWORD
+#   skip_existing: true
+#   on:
+#     branch: automation
