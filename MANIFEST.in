@@ -1,4 +1,4 @@
 include requirements.txt
-include cidc_ngs_pipeline_api/output_API.schema
+include cidc_ngs_pipeline_api/output_API.schema.json
 
 graft cidc_ngs_pipeline_api/*/
