@@ -6,11 +6,7 @@ from json import load
 
 __author__ = """Stephen C van Nostrand"""
 __email__ = "vannost@ds.dfci.harvard.edu"
-<<<<<<< Updated upstream
-__version__ = "0.1.2"
-=======
 __version__ = "0.1.4"
->>>>>>> Stashed changes
 
 
 _API_ENDING = "_output_API.json"
