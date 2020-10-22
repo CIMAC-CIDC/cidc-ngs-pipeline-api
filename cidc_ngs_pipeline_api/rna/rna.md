@@ -27,7 +27,7 @@ sample- and cohort-level to enable interactive visualization.
 
 ### Workflow figure of RIMA pipeline
 
-![](https://raw.githubusercontent.com/CIMAC-CIDC/cidc-ngs-pipeline-api/master/rna/imgs/RIMA.png)
+![](https://raw.githubusercontent.com/CIMAC-CIDC/cidc-ngs-pipeline-api/master/cidc_ngs_pipeline_api/rna/imgs/RIMA.png)
 
 ## Versions of Tools and Reference Files Used in RIMA
 
