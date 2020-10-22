@@ -6,7 +6,11 @@ from json import load
 
 __author__ = """Stephen C van Nostrand"""
 __email__ = "vannost@ds.dfci.harvard.edu"
+<<<<<<< Updated upstream
 __version__ = "0.1.2"
+=======
+__version__ = "0.1.4"
+>>>>>>> Stashed changes
 
 
 _API_ENDING = "_output_API.json"
@@ -20,10 +24,10 @@ try:
 except Exception as e:
     raise Exception(f"Failed loading json {_SCHEMA_PATH}") from e
 
-SCHEMAS = {}
+OUTPUT_APIS = {}
 for dname, _, files in os.walk(_BASE_DIR):
     for fname in files:
         if fname.endswith(_API_ENDING):
             analysis = dname.split("/")[-1]
             with open(os.path.join(dname, fname), "rb") as f:
-                SCHEMAS[analysis] = load(f)
+                OUTPUT_APIS[analysis] = load(f)

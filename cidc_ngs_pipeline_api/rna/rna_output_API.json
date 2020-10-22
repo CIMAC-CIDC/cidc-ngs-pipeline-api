@@ -1,5 +1,5 @@
 {
-    "id": [
+    "cimac id": [
         {
             "filter_group": "alignment",
             "file_path_template": "analysis/star/{id}/{id}.sorted.bam",

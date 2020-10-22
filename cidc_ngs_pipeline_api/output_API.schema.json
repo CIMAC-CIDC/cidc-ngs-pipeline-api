@@ -4,6 +4,9 @@
   "title": "Pipeline output_API.JSON schema",
   "type": "object",
   "description": "Schema for pipeline's output_API.JSONs",
+  "properties": {
+    "id": {"type":"null"}
+  },
   "additionalProperties": {
     "type": "array",
     "items": {

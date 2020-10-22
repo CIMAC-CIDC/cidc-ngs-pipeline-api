@@ -35,4 +35,4 @@ def test_api(schema):
                         f"/{k}/{n} {d['file_path_template']} needs a long_description"
                     )
 
-    assert len(errors) == 0, "\n".join(errors)
+    assert len(errors) == 0, "\n".join([str(e) for e in errors])
