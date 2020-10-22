@@ -6,7 +6,7 @@
 import jsonschema
 import pytest
 
-from cidc_ngs_pipeline_api import METASCHEMA, SCHEMAS
+from cidc_ngs_pipeline_api import METASCHEMA, OUTPUT_APIS
 
 
 def test_schema():
@@ -17,7 +17,9 @@ def test_schema():
 validator = jsonschema.Draft7Validator(METASCHEMA)
 
 
-@pytest.mark.parametrize("schema", [pytest.param(v, id=k) for k, v in SCHEMAS.items()])
+@pytest.mark.parametrize(
+    "schema", [pytest.param(v, id=k) for k, v in OUTPUT_APIS.items()]
+)
 def test_api(schema):
     """Ensure the output_API.json file conforms to schema"""
     errors = list(validator.iter_errors(schema))  # Iterable[ValidationError]
@@ -35,4 +37,4 @@ def test_api(schema):
                         f"/{k}/{n} {d['file_path_template']} needs a long_description"
                     )
 
-    assert len(errors) == 0, "\n".join(errors)
+    assert len(errors) == 0, "\n".join([str(e) for e in errors])
