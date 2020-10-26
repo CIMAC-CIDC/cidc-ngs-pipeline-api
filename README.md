@@ -27,7 +27,9 @@ Repository structure:
 │   └── wes
 │       ├── wes.md
 │       ├── wes_config.schema.json
-│       └── wes_output_API.json
+│       ├── wes_output_API.json
+│       └── imgs
+│          └── wes.png
 ├── tests
 │   └── test_apis.py
 ├── requirements.dev.txt
