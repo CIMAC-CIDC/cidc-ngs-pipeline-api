@@ -4,7 +4,7 @@ The whole-exome sequencing (WES) [Snakemake](https://snakemake.readthedocs.io/) 
 
 ### WES Workflow
 
-![]()
+![](https://raw.githubusercontent.com/CIMAC-CIDC/cidc_ngs_pipeline_api/wes/imgs/wes.png)
 
 
 ## Versions of Tools and Reference Files Used in WES
