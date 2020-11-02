@@ -28,7 +28,7 @@ The report is viewable at http://0.0.0.0:8000, which should pop up automatically
 
 ### TCR-seq Workflow
 
-![](https://raw.githubusercontent.com/CIMAC-CIDC/cidc-ngs-pipeline-api/tcr/tcr/TCRseq.png)
+![](https://raw.githubusercontent.com/CIMAC-CIDC/cidc-ngs-pipeline-api/master/cidc_ngs_pipeline_api/tcr/imgs/TCRseq.png)
 
 ### Information in Report
 
