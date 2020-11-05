@@ -35,7 +35,7 @@ def dumper(obj):
 def evalWildcards(file_tuple, wildcard, s):
     #file_tuple[0] = file_tuple[0].replace(wildcard, s)
     #Non-destructive replacement
-    #print(file_tuple)
+    # print(file_tuple)
     ret = file_tuple.copy()
     ret[0] = ret[0].replace(wildcard, s)
     return ret
@@ -164,7 +164,12 @@ TNsnv - https://support.sentieon.com/manual/usages/general/#tnsnv-algorithm""",
 
              ]
 
-run_id_files = [Wesfile(r) for r in map(lambda x: evalWildcards(x, "{run}", "{run id}"), run_files)]
+run_id_files = [r for r in map(lambda x: evalWildcards(x, "{run}", "{run id}"), run_files)]
+run_id_files = [r for r in map(lambda x: evalWildcards(x, "{caller}", "tnscope"), run_id_files)]
+run_id_files = [Wesfile(r) for batch in [map(lambda x: evalWildcards(x, "{center}", val), run_id_files)
+                                                                for val in ['broad', 'mda', 'mocha']]
+                           for r in batch]
+
 normal_files = [Wesfile(s) for s in map(lambda x: evalWildcards(x, "{sample}", "{normal cimac id}"), sample_files)]
 tumor_files = [Wesfile(s) for s in map(lambda x: evalWildcards(x, "{sample}", "{tumor cimac id}"), sample_files)]
 
