@@ -237,14 +237,14 @@ run_id_files = [
     r for r in map(lambda x: evalWildcards(x, "{caller}", "tnscope"), run_id_files)
 ]
 no_wildcard = [
-    Wesfile(
-        evalWildcards(r, "{center}", val)
-    )
+    Wesfile(evalWildcards(r, "{center}", val))
     for r in run_id_files
     for val in ["broad", "mda", "mocha"]
     if "{center}" in r[0]
 ]
-run_id_files = [Wesfile(r) for r in run_id_files if "{center}" not in r[0]] + no_wildcard
+run_id_files = [
+    Wesfile(r) for r in run_id_files if "{center}" not in r[0]
+] + no_wildcard
 
 normal_files = [
     Wesfile(s)
