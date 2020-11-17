@@ -34,17 +34,28 @@
       "enum": [32, 64, 96]
     },
     "disk_size": {
-      "description": "Disk size to use, in GB, default 500",
+      "description": "Disk size to use, in GB, default 750",
       "type": "number"
     },
+    "somatic_caller": {
+      "description": "Somatic variant caller to use, choose from {tnsnv, tnhaplotyper2, tnscope (default)}",
+      "enum": ['tnsnv','tnhaplotyper2','tnscope']
+    },      
+    "cimac_center": {
+      "description": "CIMAC center the samples associate with, i.e. broad, mocha, or mda",
+      "enum": ['broad','mocha','mda']
+    },
     "wes_commit": {
-      "description": "Specific wes commit string to use",
+      "description": "Specific wes commit string to use (filled by pipeline team)",
       "type": "string",
-      "const": "44b17ff"
+    },
+    "image": {
+      "description": "Specific wes google image to use (filled by pipeline team)",
+      "type": "string",
+    },
+    "wes_ref_snapshot": {
+      "description": "Specific wes reference snapshot to use (filled by pipeline team)",
+      "type": "string",
     }
   }
 }
-
-
-
-
