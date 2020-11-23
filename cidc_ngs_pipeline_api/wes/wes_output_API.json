@@ -134,21 +134,7 @@
             "file_purpose": "Miscellaneous"
         },
         {
-            "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.filter.exons.broad.vcf.gz",
-            "short_description": "somatic variants: vcf file of filtered somatic variants from center target regions",
-            "long_description": "VCF file of filtered somatic variants from center target regions using bcftools (http://samtools.github.io/bcftools/bcftools.html).",
-            "filter_group": "somatic",
-            "file_purpose": "Analysis view"
-        },
-        {
-            "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.filter.exons.mda.vcf.gz",
-            "short_description": "somatic variants: vcf file of filtered somatic variants from center target regions",
-            "long_description": "VCF file of filtered somatic variants from center target regions using bcftools (http://samtools.github.io/bcftools/bcftools.html).",
-            "filter_group": "somatic",
-            "file_purpose": "Analysis view"
-        },
-        {
-            "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.filter.exons.mocha.vcf.gz",
+            "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.filter.exons.vcf.gz",
             "short_description": "somatic variants: vcf file of filtered somatic variants from center target regions",
             "long_description": "VCF file of filtered somatic variants from center target regions using bcftools (http://samtools.github.io/bcftools/bcftools.html).",
             "filter_group": "somatic",
