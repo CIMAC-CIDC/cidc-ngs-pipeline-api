@@ -234,7 +234,8 @@ run_id_files = [
     r for r in map(lambda x: evalWildcards(x, "{run}", "{run id}"), run_files)
 ]
 run_id_files = [
-    Wesfile(r) for r in map(lambda x: evalWildcards(x, "{caller}", "tnscope"), run_id_files)
+    Wesfile(r)
+    for r in map(lambda x: evalWildcards(x, "{caller}", "tnscope"), run_id_files)
 ]
 
 normal_files = [
