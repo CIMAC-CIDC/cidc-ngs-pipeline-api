@@ -128,7 +128,7 @@ TNsnv - https://support.sentieon.com/manual/usages/general/#tnsnv-algorithm""",
         "somatic",
     ],
     [
-        "analysis/somatic/{run}/{run}_{caller}.filter.exons.vcf.gz",
+        "analysis/somatic/{run}/{run}_{caller}.filter.exons.center_targets.vcf.gz",
         "somatic variants: vcf file of filtered somatic variants from center target regions",
         "VCF file of filtered somatic variants from center target regions using bcftools (http://samtools.github.io/bcftools/bcftools.html).",
         "somatic",
