@@ -29,6 +29,13 @@
             "file_purpose": "Analysis view"
         },
         {
+            "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.filter.exons.center_targets.vcf.gz",
+            "short_description": "somatic variants: vcf file of filtered somatic variants from center target regions",
+            "long_description": "VCF file of filtered somatic variants from center target regions using bcftools (http://samtools.github.io/bcftools/bcftools.html).",
+            "filter_group": "somatic",
+            "file_purpose": "Analysis view"
+        },
+        {
             "file_path_template": "analysis/germline/{run id}/{run id}_vcfcompare.txt",
             "short_description": "somatic variants: overlap of somatic and germline variants",
             "long_description": "VCFtool's vcf-compare (http://vcftools.sourceforge.net/perl_module.html#vcf-compare) is used to compare somatic and germline variants.  The file shows the number of common variants, somatic only, and germline only variants.",
@@ -132,27 +139,6 @@
             "long_description": "wes sample json for cohort report generation-INTERNAL ONLY",
             "filter_group": "report",
             "file_purpose": "Miscellaneous"
-        },
-        {
-            "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.filter.exons.broad.vcf.gz",
-            "short_description": "somatic variants: vcf file of filtered somatic variants from center target regions",
-            "long_description": "VCF file of filtered somatic variants from center target regions using bcftools (http://samtools.github.io/bcftools/bcftools.html).",
-            "filter_group": "somatic",
-            "file_purpose": "Analysis view"
-        },
-        {
-            "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.filter.exons.mda.vcf.gz",
-            "short_description": "somatic variants: vcf file of filtered somatic variants from center target regions",
-            "long_description": "VCF file of filtered somatic variants from center target regions using bcftools (http://samtools.github.io/bcftools/bcftools.html).",
-            "filter_group": "somatic",
-            "file_purpose": "Analysis view"
-        },
-        {
-            "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.filter.exons.mocha.vcf.gz",
-            "short_description": "somatic variants: vcf file of filtered somatic variants from center target regions",
-            "long_description": "VCF file of filtered somatic variants from center target regions using bcftools (http://samtools.github.io/bcftools/bcftools.html).",
-            "filter_group": "somatic",
-            "file_purpose": "Analysis view"
         }
     ],
     "normal cimac id": [

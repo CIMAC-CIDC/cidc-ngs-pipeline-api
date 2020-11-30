@@ -128,7 +128,7 @@ TNsnv - https://support.sentieon.com/manual/usages/general/#tnsnv-algorithm""",
         "somatic",
     ],
     [
-        "analysis/somatic/{run}/{run}_{caller}.filter.exons.{center}.vcf.gz",
+        "analysis/somatic/{run}/{run}_{caller}.filter.exons.center_targets.vcf.gz",
         "somatic variants: vcf file of filtered somatic variants from center target regions",
         "VCF file of filtered somatic variants from center target regions using bcftools (http://samtools.github.io/bcftools/bcftools.html).",
         "somatic",
@@ -234,17 +234,9 @@ run_id_files = [
     r for r in map(lambda x: evalWildcards(x, "{run}", "{run id}"), run_files)
 ]
 run_id_files = [
-    r for r in map(lambda x: evalWildcards(x, "{caller}", "tnscope"), run_id_files)
+    Wesfile(r)
+    for r in map(lambda x: evalWildcards(x, "{caller}", "tnscope"), run_id_files)
 ]
-no_wildcard = [
-    Wesfile(evalWildcards(r, "{center}", val))
-    for r in run_id_files
-    for val in ["broad", "mda", "mocha"]
-    if "{center}" in r[0]
-]
-run_id_files = [
-    Wesfile(r) for r in run_id_files if "{center}" not in r[0]
-] + no_wildcard
 
 normal_files = [
     Wesfile(s)
