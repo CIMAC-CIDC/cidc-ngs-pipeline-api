@@ -22,7 +22,7 @@ jobs:
           pip install .
       - name: Test with pytest
         run: |
-          pytest --cov=cidc-ngs-pipeline-api -v
+          pytest
 
   build:
       runs-on: ubuntu-latest
