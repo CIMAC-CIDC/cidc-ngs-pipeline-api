@@ -1,5 +1,7 @@
 # CIDC NGS Pipeline API
 
+![Continuous Integration](https://github.com/CIMAC-CIDC/cidc-ngs-pipeline-api/workflows/Continuous%20Integration/badge.svg?branch=master)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+
 ### Overview
 This repository serves as an interface between the CIDC and Bioinformatics teams to determine specifications and documentation related to NGS pipelines.
 
