@@ -39,7 +39,9 @@ Repository structure:
 ├── requirements.txt
 ├── setup.cfg
 ├── setup.py
-└── .travis.yml
+└── .github
+    └── workflows
+       └── ci.yml
     
 ```
 
