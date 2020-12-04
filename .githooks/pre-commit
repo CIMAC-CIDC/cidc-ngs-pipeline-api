@@ -31,15 +31,5 @@ def main():
     if err:
         os.exit(err)
 
-    output, err = system(
-        "git",
-        "add",
-        os.path.join("cidc_ngs_pipeline_api", "wes", "wes_output_API.json"),
-    )
-    if output:
-        print(output)
-    if err:
-        os.exit(err)
-
 
 main()
