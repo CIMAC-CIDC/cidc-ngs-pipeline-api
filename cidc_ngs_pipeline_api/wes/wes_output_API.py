@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 """Len Taing 2020 (TGBTG)"""
 
+import os
 import sys
 import json
 from genson import SchemaBuilder
@@ -258,4 +259,9 @@ tmp = {
 }
 
 # print(json.dumps(tmp, default=dumper, indent=4))
-json.dump(tmp, open("wes_output_API.json", "w"), default=dumper, indent=4)
+json.dump(
+    tmp,
+    open(os.path.join(os.path.dirname(__file__), "wes_output_API.json"), "w"),
+    default=dumper,
+    indent=4,
+)
