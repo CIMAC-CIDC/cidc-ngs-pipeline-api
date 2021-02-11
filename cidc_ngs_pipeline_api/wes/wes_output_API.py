@@ -205,7 +205,7 @@ TNsnv - https://support.sentieon.com/manual/usages/general/#tnsnv-algorithm""",
         "rna: Variants called from RNA-seq data",
         "RNA-seq variants called using the Sentieon RNA Variant Calling pipeline(https://support.sentieon.com/manual/RNA_call/rna/).  Sentieon's Haplotyper algorithm was used for the variant calling.",
         "rna",
-        "Analysis View",
+        "Analysis view",
         True, #optional
     ],
     [
@@ -213,7 +213,7 @@ TNsnv - https://support.sentieon.com/manual/usages/general/#tnsnv-algorithm""",
         "rna: Shared RNA and WES variants that is used for neoantigen prediction when RNA-seq data is provided with the WES run",
         "Variants file representing the common variants between RNA (haplotyper.rna.vcf.gz) and WES data (filter.neoantigen.vep.vcf).",
         "rna",
-        "Analysis View",
+        "Analysis view",
         True, #optional
     ],
     [

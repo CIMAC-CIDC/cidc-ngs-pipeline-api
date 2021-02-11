@@ -125,7 +125,7 @@
             "short_description": "rna: Variants called from RNA-seq data",
             "long_description": "RNA-seq variants called using the Sentieon RNA Variant Calling pipeline(https://support.sentieon.com/manual/RNA_call/rna/).  Sentieon's Haplotyper algorithm was used for the variant calling.",
             "filter_group": "rna",
-            "file_purpose": "Analysis View",
+            "file_purpose": "Analysis view",
             "optional": true
         },
         {
@@ -133,7 +133,7 @@
             "short_description": "rna: Shared RNA and WES variants that is used for neoantigen prediction when RNA-seq data is provided with the WES run",
             "long_description": "Variants file representing the common variants between RNA (haplotyper.rna.vcf.gz) and WES data (filter.neoantigen.vep.vcf).",
             "filter_group": "rna",
-            "file_purpose": "Analysis View",
+            "file_purpose": "Analysis view",
             "optional": true
         },
         {
