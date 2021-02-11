@@ -25,6 +25,11 @@ class Wesfile:
         else:
             self.file_purpose = "Analysis view"
 
+        if len(file_tuple) > 5:
+            self.optional = file_tuple[5]
+        else:
+            self.optional = False
+
     def __str__(self):
         return self.__dict__.__str__()
 
@@ -100,7 +105,7 @@ sample_files = [
 ]
 
 run_files = [
-    [
+    [ # SOMATIC
         "analysis/somatic/{run}/{run}_{caller}.output.vcf.gz",
         "somatic variants: vcf file of somatic variants",
         """VCF file of somatic variants using one of the following the Sentieon somatic callers {tnscope (default), tnhaplotyper2, tnsnv}.
@@ -109,7 +114,7 @@ TNscope algorithm- https://support.sentieon.com/manual/usages/general/#tnscope-a
 TNhaplotyper2- https://support.sentieon.com/manual/usages/general/#tnhaplotyper2-algorithm
 TNsnv - https://support.sentieon.com/manual/usages/general/#tnsnv-algorithm""",
         "somatic",
-    ],  # SOMATIC
+    ],
     [
         "analysis/somatic/{run}/{run}_{caller}.output.maf",
         "somatic variants: maf file of somatic variants",
@@ -194,6 +199,22 @@ TNsnv - https://support.sentieon.com/manual/usages/general/#tnsnv-algorithm""",
         "msisensor2: microsatellite instability calculation",
         "Microsatellite instability calculation using msisensor2 (https://github.com/niu-lab/msisensor2)",
         "msisensor2",
+    ],
+    [
+        "analysis/rna/{run}/{run}.haplotyper.rna.vcf.gz",  # RNA
+        "rna: Variants called from RNA-seq data",
+        "RNA-seq variants called using the Sentieon RNA Variant Calling pipeline(https://support.sentieon.com/manual/RNA_call/rna/).  Sentieon's Haplotyper algorithm was used for the variant calling.",
+        "rna",
+        "Analysis View",
+        True, #optional
+    ],
+    [
+        "analysis/rna/{run}/{run}_{caller}.filter.neoantigen.vep.rna.vcf",
+        "rna: Shared RNA and WES variants that is used for neoantigen prediction when RNA-seq data is provided with the WES run",
+        "Variants file representing the common variants between RNA (haplotyper.rna.vcf.gz) and WES data (filter.neoantigen.vep.vcf).",
+        "rna",
+        "Analysis View",
+        True, #optional
     ],
     [
         "analysis/report.tar.gz",  # REPORT
