@@ -197,52 +197,6 @@
 
 
 
-        {
-            "filter_group": "immune-infiltration",
-            "file_path_template": "files/immune_infiltration/xcell.txt",
-            "short_description": "xcell report file",
-            "long_description": "xcell report file xcell report file xcell report file",
-            "file_purpose": "Miscellaneous"
-        },
-        {
-            "filter_group": "immune-infiltration",
-            "file_path_template": "files/immune_infiltration/timer.txt",
-            "short_description": "timer report file",
-            "long_description": "timer report file timer report file timer report file",
-            "file_purpose": "Miscellaneous"
-        },
-        {
-            "filter_group": "immune-infiltration",
-            "file_path_template": "files/immune_infiltration/quantiseq.txt",
-            "short_description": "quantiseq report file",
-            "long_description": "quantiseq report file quantiseq report file quantiseq report file",
-            "file_purpose": "Miscellaneous"
-        },
-        {
-            "filter_group": "immune-infiltration",
-            "file_path_template": "files/immune_infiltration/mcp_counter.txt",
-            "short_description": "mcp counter report file",
-            "long_description": "mcp counter report file mcp counter report file mcp counter report file",
-            "file_purpose": "Miscellaneous"
-        },
-        {
-            "filter_group": "immune-infiltration",
-            "file_path_template": "files/immune_infiltration/epic.txt",
-            "short_description": "epic report file",
-            "long_description": "epic report file epic report file epic report file",
-            "file_purpose": "Miscellaneous"
-        },
-        {
-            "filter_group": "immune-infiltration",
-            "file_path_template": "files/immune_infiltration/cibersort_abs.txt",
-            "short_description": "cibersort abs report file",
-            "long_description": "cibersort abs report file cibersort abs report file cibersort abs report file",
-            "file_purpose": "Miscellaneous"
-        },
-
-
-
-
 
         {
             "filter_group": "mutation",
@@ -251,6 +205,7 @@
             "long_description": "this report file contains valiated fusion gene pairs found in all samples including their gene expression",
             "file_purpose": "Miscellaneous"
         }
+
 
     ]
 }
