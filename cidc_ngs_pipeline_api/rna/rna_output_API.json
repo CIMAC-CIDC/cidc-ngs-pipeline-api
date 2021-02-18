@@ -4,7 +4,7 @@
             "filter_group": "alignment",
             "file_path_template": "analysis/star/{cimac id}/{cimac id}.sorted.bam",
             "short_description": "star alignment output",
-            "long_description": "file sorted_bam file sorted_bam file sorted_bam file",
+            "long_description": "Alignments in binary BAM format sorted by coordinate Aligned.",
             "file_purpose": "Analysis view"
         },
         {
@@ -35,7 +35,6 @@
             "long_description": "file downsampling_bam_index file downsampling_bam_index file downsampling_bam_index file",
             "file_purpose": "Miscellaneous"
         },
-
 
 
 
@@ -109,14 +108,14 @@
             "filter_group": "gene-quantification",
             "file_path_template": "analysis/salmon/{cimac id}/aux_info/fld.gz",
             "short_description": "aux_info_fld file",
-            "long_description": "file aux_info_fld file aux_info_fld file aux_info_fld file",
+            "long_description": "Fragment length didstribution file contains an approximation of observed fragment length distribution",
             "file_purpose": "Miscellaneous"
         },
         {
             "filter_group": "gene-quantification",
             "file_path_template": "analysis/salmon/{cimac id}/aux_info/meta_info.json",
             "short_description": "aux_info_meta_info file",
-            "long_description": "file aux_info_meta_info file aux_info_meta_info file aux_info_meta_info file",
+            "long_description": "meta information about the run, including stats such as the number of observed and mapped fragments, details of the bias modeling etc",
             "file_purpose": "Miscellaneous"
         },
         {
@@ -137,7 +136,7 @@
             "filter_group": "gene-quantification",
             "file_path_template": "analysis/salmon/{cimac id}/cmd_info.json",
             "short_description": "cmd_info file",
-            "long_description": "file cmd_info file cmd_info file cmd_info file",
+            "long_description": "A file that records the main command line parameters with which Salmon used",
             "file_purpose": "Miscellaneous"
         },
         {
@@ -146,6 +145,112 @@
             "short_description": "salmon_quant_log file",
             "long_description": "file salmon_quant_log file salmon_quant_log file salmon_quant_log file",
             "file_purpose": "Miscellaneous"
+        },
+
+
+
+	{
+            "filter_group": "microbiome",
+            "file_path_template": "analysis/microbiome/{cimac id}/{cimac id}_addSample_report.txt",
+            "short_description": "Centrifuge summary output file",
+            "long_description": "Centrifuge output file contains name of a genome, taxonomic ID and rank, and also the proportion of this genome normalized by its genomic length",
+            "file_purpose": "Miscellaneous"
+        },
+
+
+
+        {
+            "filter_group": "immune-repertoire",
+            "file_path_template": "analysis/trust4/{cimac id}/{cimac id}_raw.out",
+            "short_description": "TURST4 raw output file",
+            "long_description": "TURST4 raw output file contains contigs and coreesponding nucleotide weight",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "immune-repertoire",
+            "file_path_template": "analysis/trust4/{cimac id}/{cimac id}_final.out",
+            "short_description": "TURST4 final output file",
+            "long_description": "TURST4 final output file contains contigs and coreesponding nucleotide weight",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "immune-repertoire",
+            "file_path_template": "analysis/trust4/{cimac id}/{cimac id}_annot.fa",
+            "short_description": "TURST4 annotation information",
+            "long_description": "fasta format for the annotation of the consensus assembly",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "immune-repertoire",
+            "file_path_template": "analysis/trust4/{cimac id}/{cimac id}_cdr3.out",
+            "short_description": "TURST4 CDR3 report",
+            "long_description": "This report contains the CDR1,2,3 and gene information for each consensus assemblies",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "immune-repertoire",
+            "file_path_template": "analysis/trust4/{cimac id}/{cimac id}_report.tsv",
+            "short_description": "TURST4 final report file",
+            "long_description": "This report file focuses on CDR3 and is compatible with other repertoire analysis tools, such as VDJTools ",
+            "file_purpose": "Miscellaneous"
+        },
+
+
+
+        {
+            "filter_group": "immune-infiltration",
+            "file_path_template": "files/immune_infiltration/xcell.txt",
+            "short_description": "xcell report file",
+            "long_description": "xcell report file xcell report file xcell report file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "immune-infiltration",
+            "file_path_template": "files/immune_infiltration/timer.txt",
+            "short_description": "timer report file",
+            "long_description": "timer report file timer report file timer report file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "immune-infiltration",
+            "file_path_template": "files/immune_infiltration/quantiseq.txt",
+            "short_description": "quantiseq report file",
+            "long_description": "quantiseq report file quantiseq report file quantiseq report file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "immune-infiltration",
+            "file_path_template": "files/immune_infiltration/mcp_counter.txt",
+            "short_description": "mcp counter report file",
+            "long_description": "mcp counter report file mcp counter report file mcp counter report file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "immune-infiltration",
+            "file_path_template": "files/immune_infiltration/epic.txt",
+            "short_description": "epic report file",
+            "long_description": "epic report file epic report file epic report file",
+            "file_purpose": "Miscellaneous"
+        },
+        {
+            "filter_group": "immune-infiltration",
+            "file_path_template": "files/immune_infiltration/cibersort_abs.txt",
+            "short_description": "cibersort abs report file",
+            "long_description": "cibersort abs report file cibersort abs report file cibersort abs report file",
+            "file_purpose": "Miscellaneous"
+        },
+
+
+
+
+
+        {
+            "filter_group": "mutation",
+            "file_path_template": "analysis/fusion/{cimac id}/{cimac id}.fusion_predictions.abridged_addSample.tsv",
+            "short_description": "fusion analysis report file",
+            "long_description": "this report file contains valiated fusion gene pairs found in all samples including their gene expression",
+            "file_purpose": "Miscellaneous"
         }
+
     ]
 }
