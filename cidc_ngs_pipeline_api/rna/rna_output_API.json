@@ -11,7 +11,7 @@
             "filter_group": "alignment",
             "file_path_template": "analysis/star/{cimac id}/{cimac id}.sorted.bam.bai",
             "short_description": "sorted_bam_index file",
-            "long_description": "sorted_bam_index file sorted_bam_index file sorted_bam_index file",
+            "long_description": "file sorted_bam_index file sorted_bam_index file sorted_bam_index file",
             "file_purpose": "Miscellaneous"
         },
         {
@@ -26,7 +26,7 @@
            "filter_group": "alignment",
             "file_path_template": "analysis/star/{cimac id}/{cimac id}.transcriptome.bam",
             "short_description": "transcriptome bam file",
-            "long_description": "transcriptome bam file transcriptome bam file transcriptome bam file",
+            "long_description": "file transcriptome_bam file transcriptome_bam file transcriptome_bam file",
             "file_purpose": "Miscellaneous"
         },
         
@@ -50,7 +50,7 @@
             "filter_group": "quality",
             "file_path_template": "analysis/rseqc/tin_score/{cimac id}/{cimac id}.summary.txt",
             "short_description": "tin_score_summary file",
-            "long_description": "tin_score_summary file tin_score_summary file tin_score_summary file",
+            "long_description": "file tin_score_summary file tin_score_summary file tin_score_summary file",
             "file_purpose": "Miscellaneous"
         },
         {
