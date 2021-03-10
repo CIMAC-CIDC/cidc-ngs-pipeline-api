@@ -11,14 +11,14 @@
             "filter_group": "alignment",
             "file_path_template": "analysis/star/{cimac id}/{cimac id}.sorted.bam.bai",
             "short_description": "sorted_bam_index file",
-            "long_description": "sorted_bam_index file",
+            "long_description": "sorted_bam_index file sorted_bam_index file sorted_bam_index file",
             "file_purpose": "Miscellaneous"
         },
         {
             "filter_group": "alignment",
             "file_path_template": "analysis/star/{cimac id}/{cimac id}.sorted.bam.stat.txt",
             "short_description": "sorted_bam_stat_txt file",
-            "long_description": "sorted_bam_stat_txt file",
+            "long_description": "sorted_bam_stat_txt file sorted_bam_stat_txt sorted_bam_stat_txt",
             "file_purpose": "Miscellaneous"
         },
         
@@ -26,7 +26,7 @@
            "filter_group": "alignment",
             "file_path_template": "analysis/star/{cimac id}/{cimac id}.transcriptome.bam",
             "short_description": "transcriptome bam file",
-            "long_description": "transcriptome bam file",
+            "long_description": "transcriptome bam file transcriptome bam file transcriptome bam file",
             "file_purpose": "Miscellaneous"
         },
         
@@ -50,7 +50,7 @@
             "filter_group": "quality",
             "file_path_template": "analysis/rseqc/tin_score/{cimac id}/{cimac id}.summary.txt",
             "short_description": "tin_score_summary file",
-            "long_description": "tin_score_summary file",
+            "long_description": "tin_score_summary file tin_score_summary file tin_score_summary file",
             "file_purpose": "Miscellaneous"
         },
         {
@@ -169,7 +169,7 @@
         	"filter_group": "MSI",
             "file_path_template": "analysis/msisensor/single/run_{cimac id}/run_{cimac id}_msisensor",
             "short_description": "msisensor report file",
-            "long_description": "this report file contains msi score",
+            "long_description": "this report file contains msi score this report file contains msi score",
             "file_purpose": "Miscellaneous"
         },
         
