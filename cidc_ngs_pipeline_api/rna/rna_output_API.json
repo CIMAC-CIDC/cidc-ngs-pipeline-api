@@ -136,7 +136,7 @@
 
 
 
-	   {
+	{
             "filter_group": "microbiome",
             "file_path_template": "analysis/microbiome/{cimac id}/{cimac id}_addSample_report.txt",
             "short_description": "Centrifuge summary output file",
@@ -182,12 +182,6 @@
             "long_description": "this report file contains MHC class I&II HLA allels",
             "file_purpose": "Miscellaneous"
         }
-
-    
-
-
-
-
 
     ]
 }
