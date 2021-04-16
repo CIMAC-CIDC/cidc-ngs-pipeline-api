@@ -167,7 +167,7 @@
         
         {
         	"filter_group": "MSI",
-            "file_path_template": "analysis/msisensor/single/run_{cimac id}/run_{cimac id}_msisensor",
+            "file_path_template": "analysis/msisensor/single/run_{cimac id}/run_{cimac id}_msisensor.txt",
             "short_description": "msisensor report file",
             "long_description": "this report file contains msi score this report file contains msi score",
             "file_purpose": "Miscellaneous"
