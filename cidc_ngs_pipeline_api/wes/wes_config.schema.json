@@ -25,6 +25,19 @@
         }
       }
     },
+    "rna": {
+      "description": "Optional section that should be included ONLY when RNAseq data is available.  bam_file is the sorted.bam file; expression_file is the salmon expression (.sf) file",
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+            "bam_file": {"type": "string",
+			"pattern": "^gs://.*\\.bam"},
+            "expression_file": {"type": "string",
+			       "pattern": "^gs://.*\\.sf"}
+        }
+      }
+    },
     "instance_name": {
       "type": "string",
       "pattern": "[a-z]+"
@@ -56,6 +69,10 @@
     "wes_ref_snapshot": {
       "description": "Specific wes reference snapshot to use (filled by pipeline team)",
       "type": "string",
+    },
+    "trim_soft_clip": {
+      "description": "Specifies whether the variant caller should soft-clip the reads (default: False)",
+      "type": "boolean",
     }
   }
 }
