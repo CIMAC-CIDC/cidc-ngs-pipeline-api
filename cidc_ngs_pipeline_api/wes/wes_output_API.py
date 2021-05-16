@@ -5,7 +5,7 @@ import os
 import sys
 import json
 from genson import SchemaBuilder
-
+from optparse import OptionParser
 
 class Wesfile:
     """General wes file object that will handle outputing to appropriate
@@ -244,42 +244,59 @@ TNsnv - https://support.sentieon.com/manual/usages/general/#tnsnv-algorithm""",
     },
 ]
 
-run_id_files = [
-    r for r in map(lambda x: evalWildcards(x, "{run}", "{run id}"), run_files)
-]
-run_id_files = [
-    Wesfile(r)
-    for r in map(lambda x: evalWildcards(x, "{caller}", "tnscope"), run_id_files)
-]
+def main():
+    usage = "USAGE: %prog -t [tumor_only assay files (default: False--prints tumor/normal assay files)"
+    optparser = OptionParser(usage=usage)
+    optparser.add_option("-t", "--tumor_only", help="print files for tumor_only assay (default: False)", default=False, action="store_true")
+    (options, args) = optparser.parse_args(sys.argv)
 
-normal_files = [
-    Wesfile(s)
-    #NOTE: sending in the is_optional param: True for evalWildcards for normal samples
-    for s in map(
-        lambda x: evalWildcards(x, "{sample}", "{normal cimac id}", True), sample_files
-    )
-]
-#remove normal files from tumor_only_assay
-for nf in normal_files:
-    nf.tumor_only_assay = False
+    run_id_files = [
+        r for r in map(lambda x: evalWildcards(x, "{run}", "{run id}"), run_files)
+    ]
+    run_id_files = [
+        Wesfile(r)
+        for r in map(lambda x: evalWildcards(x, "{caller}", "tnscope"), run_id_files)
+    ]
 
-tumor_files = [
-    Wesfile(s)
-    for s in map(
-        lambda x: evalWildcards(x, "{sample}", "{tumor cimac id}"), sample_files
-    )
-]
+    normal_files = [
+        Wesfile(s)
+        #NOTE: sending in the is_optional param: True for evalWildcards for normal samples
+        for s in map(
+                lambda x: evalWildcards(x, "{sample}", "{normal cimac id}", True), sample_files
+        )
+    ]
+# Will remove normals below IF options.tumor_only is True
+#    #remove normal files from tumor_only_assay
+#    for nf in normal_files:
+#        nf.tumor_only_assay = False
 
-tmp = {
-    "run id": run_id_files,
-    "normal cimac id": normal_files,
-    "tumor cimac id": tumor_files,
-}
+    tumor_files = [
+        Wesfile(s)
+        for s in map(
+                lambda x: evalWildcards(x, "{sample}", "{tumor cimac id}"), sample_files
+        )
+    ]
 
-# print(json.dumps(tmp, default=dumper, indent=4))
-json.dump(
-    tmp,
-    open(os.path.join(os.path.dirname(__file__), "wes_output_API.json"), "w"),
-    default=dumper,
-    indent=4,
-)
+    tmp = {
+        "run id": run_id_files,
+        "normal cimac id": normal_files,
+        "tumor cimac id": tumor_files,
+    }
+
+    if options.tumor_only: #REMOVE normal files for tumor_only assay
+        del tmp['normal cimac id']
+    #     output_f = "wes_output_API_tumor_only.json"
+    # else:
+    #     output_f = "wes_output_API.json"
+
+    #DUMP the file
+    # json.dump(
+    #     tmp,
+    #     open(os.path.join(os.path.dirname(__file__), output_f), "w"),
+    #     default=dumper,
+    #     indent=4,
+    # )
+    print(json.dumps(tmp, default=dumper, indent=4))
+    
+if __name__ == '__main__':
+    main()
