@@ -24,6 +24,7 @@ OUTPUT_APIS = {}
 for dname, _, files in os.walk(_BASE_DIR):
     for fname in files:
         if fname.endswith(_API_ENDING):
-            analysis = dname.split("/")[-1]
+            analysis = fname[: -len(_API_ENDING)]
             with open(os.path.join(dname, fname), "rb") as f:
+                print(analysis)
                 OUTPUT_APIS[analysis] = load(f)
