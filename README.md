@@ -30,6 +30,7 @@ Repository structure:
 │       ├── wes.md
 │       ├── wes_config.schema.json
 │       ├── wes_output_API.json
+│       ├── wes_tumor_only_output_API.json
 │       ├── wes_output_API.py
 │       └── imgs
 │          └── wes.png
