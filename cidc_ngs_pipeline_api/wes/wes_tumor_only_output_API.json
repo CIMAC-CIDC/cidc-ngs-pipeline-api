@@ -1,6 +1,15 @@
 {
     "run id": [
         {
+            "file_path_template": "analysis/ignore.txt",
+            "short_description": "list of files and modules to be ignored",
+            "long_description": "Explanation of all files which are expected to be empty due to a failed/missing module.",
+            "filter_group": "",
+            "file_purpose": "Analysis view",
+            "optional": false,
+            "tumor_only_assay": true
+        },
+        {
             "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.output.vcf.gz",
             "short_description": "somatic variants: vcf file of somatic variants",
             "long_description": "VCF file of somatic variants using one of the following the Sentieon somatic callers {tnscope (default), tnhaplotyper2, tnsnv}.\n\nTNscope algorithm- https://support.sentieon.com/manual/usages/general/#tnscope-algorithm\nTNhaplotyper2- https://support.sentieon.com/manual/usages/general/#tnhaplotyper2-algorithm\nTNsnv - https://support.sentieon.com/manual/usages/general/#tnsnv-algorithm",
