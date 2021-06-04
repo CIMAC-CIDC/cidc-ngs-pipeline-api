@@ -29,11 +29,11 @@
             "file_purpose": "Analysis view"
         },
         {
-            "filter_group": "metrics/quality_metrics_summary",
-            "file_path_template": "analysis/metrics/{run id}.{replicate}/{run id}.{replicate}_metrics_summary.json",
-            "short_description": "quality control summary file",
-            "long_description": "quality control summary file including mapping statistics, PBC, Frip, conservation, contamination statistics",
-            "file_purpose": "Miscellaneous"
+            "filter_group": "report/report.zip",
+            "file_path_template": "analysis/report/report.zip",
+            "short_description": "summary report",
+            "long_description": "A html report with five sections: Overview, Read Level Summary, Peak Level Summary, Genome Track View, and Downstream",
+            "file_purpose": "Analysis view"
         }
     ],
     "cimac id": [
@@ -43,7 +43,7 @@
             "short_description": "alignment file",
             "long_description": "bwa-mem aligned deduplicated alignment file",
             "file_purpose": "Source view"
-        }
-        
+        },
+
     ]
 }
