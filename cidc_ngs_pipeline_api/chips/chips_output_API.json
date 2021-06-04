@@ -43,7 +43,7 @@
             "short_description": "alignment file",
             "long_description": "bwa-mem aligned deduplicated alignment file",
             "file_purpose": "Source view"
-        },
+        }
 
     ]
 }
