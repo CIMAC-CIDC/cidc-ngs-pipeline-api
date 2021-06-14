@@ -4,7 +4,6 @@
 import os
 import sys
 import json
-from genson import SchemaBuilder
 from optparse import OptionParser
 
 
@@ -104,9 +103,10 @@ sample_files = [
 
 run_files = [
     {  # MISC
-        "file_path": "analysis/ignore.txt",
-        "short_descr": "list of files and modules to be ignored",
+        "file_path": "analysis/{run}_error.yaml",
+        "short_descr": "yaml file that specifies error codes for files",
         "long_descr": "Explanation of all files which are expected to be empty due to a failed/missing module.",
+        "optional": True,  # optional
         "filter_group": "",
     },
     {  # SOMATIC
@@ -315,18 +315,18 @@ def main():
         tmp["tumor cimac id"] = list(
             filter(lambda x: getattr(x, "tumor_only_assay"), tmp["tumor cimac id"])
         )
-    #     output_f = "wes_tumor_only_output_API.json"
-    # else:
-    #     output_f = "wes_output_API.json"
+        output_f = "wes_tumor_only_output_API.json"
+    else:
+        output_f = "wes_output_API.json"
 
     # DUMP the file
-    # json.dump(
-    #     tmp,
-    #     open(os.path.join(os.path.dirname(__file__), output_f), "w"),
-    #     default=dumper,
-    #     indent=4,
-    # )
-    print(json.dumps(tmp, default=dumper, indent=4))
+    json.dump(
+        tmp,
+        open(os.path.join(os.path.dirname(__file__), output_f), "w"),
+        default=dumper,
+        indent=4,
+    )
+    # print(json.dumps(tmp, default=dumper, indent=4))
 
 
 if __name__ == "__main__":
