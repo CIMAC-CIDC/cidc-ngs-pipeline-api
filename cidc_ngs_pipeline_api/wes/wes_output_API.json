@@ -1,12 +1,12 @@
 {
     "run id": [
         {
-            "file_path_template": "analysis/ignore.txt",
-            "short_description": "list of files and modules to be ignored",
+            "file_path_template": "analysis/{run id}_error.yaml",
+            "short_description": "yaml file that specifies error codes for files",
             "long_description": "Explanation of all files which are expected to be empty due to a failed/missing module.",
             "filter_group": "",
             "file_purpose": "Analysis view",
-            "optional": false,
+            "optional": true,
             "tumor_only_assay": true
         },
         {
@@ -61,7 +61,7 @@
             "filter_group": "somatic",
             "file_purpose": "Analysis view",
             "optional": false,
-            "tumor_only_assay": true
+            "tumor_only_assay": false
         },
         {
             "file_path_template": "analysis/report/somatic_variants/06_tumor_mutational_burden.tsv",
@@ -70,7 +70,7 @@
             "filter_group": "somatic",
             "file_purpose": "Analysis view",
             "optional": false,
-            "tumor_only_assay": true
+            "tumor_only_assay": false
         },
         {
             "file_path_template": "analysis/report/neoantigens/01_HLA_Results.tsv",
@@ -97,7 +97,7 @@
             "filter_group": "purity",
             "file_purpose": "Analysis view",
             "optional": false,
-            "tumor_only_assay": true
+            "tumor_only_assay": false
         },
         {
             "file_path_template": "analysis/clonality/{run id}/{run id}_pyclone.tsv",
@@ -106,7 +106,7 @@
             "filter_group": "clonality",
             "file_purpose": "Analysis view",
             "optional": false,
-            "tumor_only_assay": true
+            "tumor_only_assay": false
         },
         {
             "file_path_template": "analysis/clonality/{run id}/{run id}_table.tsv",
@@ -115,7 +115,7 @@
             "filter_group": "clonality",
             "file_purpose": "Analysis view",
             "optional": false,
-            "tumor_only_assay": true
+            "tumor_only_assay": false
         },
         {
             "file_path_template": "analysis/copynumber/{run id}/{run id}_cnvcalls.txt",
@@ -279,7 +279,7 @@
             "filter_group": "germline",
             "file_purpose": "Analysis view",
             "optional": false,
-            "tumor_only_assay": true
+            "tumor_only_assay": false
         }
     ],
     "tumor cimac id": [
@@ -353,7 +353,7 @@
             "filter_group": "germline",
             "file_purpose": "Analysis view",
             "optional": false,
-            "tumor_only_assay": true
+            "tumor_only_assay": false
         }
     ]
 }
