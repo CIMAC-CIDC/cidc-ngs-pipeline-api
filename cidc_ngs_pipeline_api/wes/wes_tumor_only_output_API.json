@@ -1,12 +1,12 @@
 {
     "run id": [
         {
-            "file_path_template": "analysis/ignore.txt",
-            "short_description": "list of files and modules to be ignored",
+            "file_path_template": "analysis/{run id}_error.yaml",
+            "short_description": "yaml file that specifies error codes for files",
             "long_description": "Explanation of all files which are expected to be empty due to a failed/missing module.",
             "filter_group": "",
             "file_purpose": "Analysis view",
-            "optional": false,
+            "optional": true,
             "tumor_only_assay": true
         },
         {
