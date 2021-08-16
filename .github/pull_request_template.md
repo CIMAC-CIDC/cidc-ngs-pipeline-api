@@ -10,6 +10,10 @@ Describe what motivated this Pull Request and why this was necessary. Use closin
 
 Add notes on possible known quirks/drawbacks of this.
 
+## Mentions
+
+Person responsible for reviewing proposed changes.
+
 ## Checklist
 
 Please include and complete the following checklist. Your Pull Request is (in most cases) not ready for review until the following have been completed. You can create a draft PR while you are still completing the checklist. You can mark an item as complete with the `- [x]` prefix
