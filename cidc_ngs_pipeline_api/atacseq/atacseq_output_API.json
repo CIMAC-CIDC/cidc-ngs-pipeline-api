@@ -1,49 +1,46 @@
 {
-    "run id": [
+    "cimac id": [
         {
             "filter_group": "peaks/sorted_peaks",
-            "file_path_template": "analysis/peaks/{run id}.{replicate}/{run id}.{replicate}_sorted_peaks.bed",
+            "file_path_template": "analysis/peaks/{cimac id}.rep1/{cimac id}.rep1_sorted_peaks.bed",
             "short_description": "Regular peak called by MACS2",
             "long_description": "5th: integer score for display. It's calculated as int(-10*log10pvalue) or int(-10*log10qvalue) depending on whether -p (pvalue) or -q (qvalue) is used as score cutoff 7th: fold-change at peak summit 8th: -log10pvalue at peak summit 9th: -log10qvalue at peak summit 10th: relative summit position to peak start. https://github.com/macs3-project/MACS",
             "file_purpose": "Analysis view"
         },
         {
-            "filter_group": "peaks/sorted_summit",
-            "file_path_template": "analysis/peaks/{run id}.{replicate}/{run id}.{replicate}_sorted_summit.bed",
+            "filter_group": "peaks/sorted_summits",
+            "file_path_template": "analysis/peaks/{cimac id}.rep1/{cimac id}.rep1_sorted_summits.bed",
             "short_description": "Peak summit called by MACS2",
             "long_description": "MACS2-called location with the highest fragment pileup aka the summit",
             "file_purpose": "Analysis view"
         },
         {
             "filter_group": "peaks/sorted_narrowPeak",
-            "file_path_template": "analysis/peaks/{run id}.{replicate}/{run id}.{replicate}_sorted_peaks.narrowPeak",
+            "file_path_template": "analysis/peaks/{cimac id}.rep1/{cimac id}.rep1_sorted_peaks.narrowPeak",
             "short_description": "narrowPeak called by MACS2",
             "long_description": "MACS2-called peak locations, summits, p-, and q-values in BED6+4 format",
             "file_purpose": "Analysis view"
         },
         {
             "filter_group": "peaks/bigwig",
-            "file_path_template": "analysis/peaks/{run id}.{replicate}/{run id}.{replicate}_treat_pipleup.bw",
+            "file_path_template": "analysis/peaks/{cimac id}.rep1/{cimac id}.rep1_treat_pileup.bw",
             "short_description": "bigwig file",
             "long_description": "RPKM (reads per kilobase per million) normalized pile up bigwig file for visualization in IGV",
             "file_purpose": "Analysis view"
         },
         {
-            "filter_group": "metrics/quality_metrics_summary",
-            "file_path_template": "analysis/metrics/{run id}.{replicate}/{run id}.{replicate}_metrics_summary.json",
-            "short_description": "quality control summary file",
-            "long_description": "quality control summary file including mapping statistics, PBC, Frip, conservation, contamination statistics",
-            "file_purpose": "Miscellaneous"
-        }
-    ],
-    "cimac id": [
+            "filter_group": "report/report.zip",
+            "file_path_template": "analysis/report/report.zip",
+            "short_description": "summary report",
+            "long_description": "A html report with five sections: Overview, Read Level Summary, Peak Level Summary, Genome Track View, and Downstream",
+            "file_purpose": "Analysis view"
+        },
         {
-            "filter_group": "alignment/align_dedupicated",
-            "file_path_template": "analysis/align/{cimac id}/{cimac id}.bam",
+            "filter_group": "align/sorted_bam",
+            "file_path_template": "analysis/align/{cimac id}/{cimac id}.sorted.bam",
             "short_description": "alignment file",
-            "long_description": "bwa-mem aligned deduplicated alignment file",
+            "long_description": "bwa-mem aligned sorted alignment file",
             "file_purpose": "Source view"
         }
-        
     ]
 }
