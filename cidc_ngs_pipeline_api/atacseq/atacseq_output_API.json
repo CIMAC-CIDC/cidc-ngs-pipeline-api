@@ -8,8 +8,8 @@
             "file_purpose": "Analysis view"
         },
         {
-            "filter_group": "peaks/sorted_summit",
-            "file_path_template": "analysis/peaks/{cimac id}.rep1/{cimac id}.rep1_sorted_summit.bed",
+            "filter_group": "peaks/sorted_summits",
+            "file_path_template": "analysis/peaks/{cimac id}.rep1/{cimac id}.rep1_sorted_summits.bed",
             "short_description": "Peak summit called by MACS2",
             "long_description": "MACS2-called location with the highest fragment pileup aka the summit",
             "file_purpose": "Analysis view"
@@ -23,7 +23,7 @@
         },
         {
             "filter_group": "peaks/bigwig",
-            "file_path_template": "analysis/peaks/{cimac id}.rep1/{cimac id}.rep1_treat_pipleup.bw",
+            "file_path_template": "analysis/peaks/{cimac id}.rep1/{cimac id}.rep1_treat_pileup.bw",
             "short_description": "bigwig file",
             "long_description": "RPKM (reads per kilobase per million) normalized pile up bigwig file for visualization in IGV",
             "file_purpose": "Analysis view"
@@ -36,10 +36,10 @@
             "file_purpose": "Analysis view"
         },
         {
-            "filter_group": "alignment/align_dedupicated",
-            "file_path_template": "analysis/align/{cimac id}/{cimac id}.bam",
+            "filter_group": "align/sorted_bam",
+            "file_path_template": "analysis/align/{cimac id}/{cimac id}.sorted.bam",
             "short_description": "alignment file",
-            "long_description": "bwa-mem aligned deduplicated alignment file",
+            "long_description": "bwa-mem aligned sorted alignment file",
             "file_purpose": "Source view"
         }
     ]
