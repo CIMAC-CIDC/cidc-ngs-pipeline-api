@@ -21,7 +21,7 @@ The main components of the CHIPs ATAC-seq pipline are:
 
 ### workflow figure for ATAC-seq pipeline
 
-![](https://raw.githubusercontent.com/CIMAC-CIDC/cidc-ngs-pipeline-api/master/cidc_ngs_pipeline_api/atac/imgs/atac.png)
+![](https://raw.githubusercontent.com/CIMAC-CIDC/cidc-ngs-pipeline-api/master/cidc_ngs_pipeline_api/atacseq/imgs/atacseq.png)
 
 ## Versions of Tools and Reference Files Used in CHIPs
 
