@@ -29,7 +29,7 @@
             "file_purpose": "Analysis view"
         },
         {
-            "filter_group": "report/report.zip",
+            "filter_group": "report",
             "file_path_template": "analysis/report/report.zip",
             "short_description": "summary report",
             "long_description": "A html report with five sections: Overview, Read Level Summary, Peak Level Summary, Genome Track View, and Downstream",
