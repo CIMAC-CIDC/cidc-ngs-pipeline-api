@@ -63,7 +63,9 @@ SampleName3,2,40-49,2,Bb,1
 ```
 
 ### Video Tutorial
-A ![video tutorial](https://www.youtube.com/watch?v=vmDwjSrei0c) is available which describes decompressing and opening the report as well as how to modify the meta.csv file.
+The following video describes decompressing and opening the report as well as how to modify the meta.csv file.
+
+[![Watch the video](http://img.youtube.com/vi/vmDwjSrei0c/0.jpg)](https://www.youtube.com/watch?v=vmDwjSrei0c)
 
 ### Information in Report
 
