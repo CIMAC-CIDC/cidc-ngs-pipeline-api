@@ -22,6 +22,11 @@ Repository structure:
 │   │   ├── chips_output_API.json
 │   │   └── imgs
 │   |       └── chips.png
+│   ├── atacseq
+│   │   ├── atacseq.md
+│   │   ├── atacseq_output_API.json
+│   │   └── imgs
+│   |       └── atacseq.png
 │   ├── tcr
 │   │   ├── tcr.md
 │   │   └── imgs
