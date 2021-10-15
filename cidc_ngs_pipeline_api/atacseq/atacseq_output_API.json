@@ -29,18 +29,20 @@
             "file_purpose": "Analysis view"
         },
         {
-            "filter_group": "report",
-            "file_path_template": "analysis/report/report.zip",
-            "short_description": "summary report",
-            "long_description": "A html report with five sections: Overview, Read Level Summary, Peak Level Summary, Genome Track View, and Downstream",
-            "file_purpose": "Analysis view"
-        },
-        {
             "filter_group": "align/sorted_bam",
             "file_path_template": "analysis/align/{cimac id}/{cimac id}.sorted.bam",
             "short_description": "alignment file",
             "long_description": "bwa-mem aligned sorted alignment file",
             "file_purpose": "Source view"
+        }
+    ],
+    "batch id": [
+        {
+            "filter_group": "report",
+            "file_path_template": "analysis/{batch id}/report.zip",
+            "short_description": "summary report",
+            "long_description": "A html report with five sections: Overview, Read Level Summary, Peak Level Summary, Genome Track View, and Downstream",
+            "file_purpose": "Analysis view"
         }
     ]
 }
