@@ -19,15 +19,6 @@
             "tumor_only_assay": true
         },
         {
-            "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.output.maf",
-            "short_description": "somatic variants: maf file of somatic variants",
-            "long_description": "MAF file of VEP annotated variants using vcf2maf tool (https://github.com/mskcc/vcf2maf).  The vep annotated vcf (output.vcf.gz) file was used as the input for vcf2maf.",
-            "filter_group": "somatic",
-            "file_purpose": "Analysis view",
-            "optional": false,
-            "tumor_only_assay": true
-        },
-        {
             "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.filter.vcf.gz",
             "short_description": "somatic variants: vcf file of filtered somatic variants",
             "long_description": "VCF file of filtered somatic variants.  With the output.vcf file as input, the vcftools software was used with parameter --remove-filtered-all to remove any variants whose FILTER column is anything other than PASS.  see http://vcftools.sourceforge.net/man_latest.html",
