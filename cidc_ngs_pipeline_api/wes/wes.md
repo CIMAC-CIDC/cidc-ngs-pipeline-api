@@ -2,6 +2,13 @@
 
 The CIDC whole-exome sequencing (WES) pipeline aims to identify and characterize key immunotherapeutic features of tumor samples.  WES implements the [Gene Analysis Toolkit](https://gatk.broadinstitute.org/hc/en-us) (GATK) best practices and identifies both somatic and germline variants using Sentieon's TNScope and Haplotyper algorithms, respectively.  Somatic variants are annotated using the Variant Effect Predictor software.  As recommended in [Chen YC, Seifuddin F, et al. 2021](https://www.biorxiv.org/content/10.1101/2021.02.18.431906v1.full), the pipeline uses an ensemble of three callers (CNVkit, Sequenza, and Facets) to characterize tumor copy number variation:  the overlap of the CNV segments is used to generate a high-confident consensus set.  WES estimates tumor purity using two different software packages, Sequenza and FACETS, and also infers tumor clonal populations using PyClone-VI. The pipeline characterizes tumor HLA type (both class I and class II alleles) using HLA-HD, xHLA, and Optitype.  WES also performs neoantigen prediction with pVACtools version 2.0.7 which incoporates netMHCpan 4.1 and netMHCpanII 4.0 as neoantigen callers and IEDB 3.1.1 as an epitope database.  WES estimates tumor tcell fraction using TCellExTRECT and tumor microsatellite instability using MSIsensor2.
 
+### WES Workflow
+
+![](https://raw.githubusercontent.com/CIMAC-CIDC/cidc-ngs-pipeline-api/master/cidc_ngs_pipeline_api/wes/imgs/wes.png)
+
+
+## Versions of Tools and Reference Files Used in WES
+
 | Reference/Software | Version | Source | Notes |
 |--|--|--|--|
 | Assembly | hg38 | GDC | modified to only include chr1-22,X,Y,M |
