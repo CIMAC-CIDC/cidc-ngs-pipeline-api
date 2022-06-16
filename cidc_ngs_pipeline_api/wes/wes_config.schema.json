@@ -47,7 +47,7 @@
       "enum": [32, 64, 96]
     },
     "disk_size": {
-      "description": "Disk size to use, in GB, default 750",
+      "description": "Disk size to use, in GB, default 500",
       "type": "number"
     },
     "somatic_caller": {
@@ -72,6 +72,10 @@
     },
     "trim_soft_clip": {
       "description": "Specifies whether the variant caller should soft-clip the reads (default: False)",
+      "type": "boolean",
+    },
+    "tumor_only": {
+      "description": "Specifies whether the sample is tumor only, i.e. missing a matched normal (default: False)",
       "type": "boolean",
     }
   }
