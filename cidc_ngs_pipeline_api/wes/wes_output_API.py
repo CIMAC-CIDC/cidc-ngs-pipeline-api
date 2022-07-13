@@ -401,12 +401,6 @@ TNhaplotyper2- https://support.sentieon.com/manual/usages/general/#tnhaplotyper2
 TNsnv - https://support.sentieon.com/manual/usages/general/#tnsnv-algorithm""",
         "filter_group": "somatic",
     },
-    {
-        "file_path": "analysis/somatic/{run}/{run}_{caller}.output.maf",
-        "short_descr": "somatic variants: maf file of somatic variants",
-        "long_descr": "MAF file of VEP annotated variants using vcf2maf tool (https://github.com/mskcc/vcf2maf).  The vep annotated vcf of the somatic variants (output.vcf.gz) file was converted to maf using vcf2maf.",
-        "filter_group": "somatic",
-    },
     # another way of describing it way of doing it 
     # {
     #     "file_path": "analysis/somatic/{run}/{run}_{caller}.output.twist.vcf",

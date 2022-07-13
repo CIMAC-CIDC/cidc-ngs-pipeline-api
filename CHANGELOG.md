@@ -9,6 +9,10 @@ This Changelog tracks changes to this project. The notes below include a summary
 - `fixed` for any bug fixes.
 - `security` in case of vulnerabilities.
 
+## Version `0.1.20` - 12 Jul 2022
+
+- `changed` remove WES analysis somatic/tnscope.output.maf
+
 ## Version `0.1.19` - 8 Jul 2022
 
 - `changed` WES and WES-TO APIs for analysis pipeline v3
