@@ -100,15 +100,6 @@
             "tumor_only_assay": true
         },
         {
-            "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.output.maf",
-            "short_description": "somatic variants: maf file of somatic variants",
-            "long_description": "MAF file of VEP annotated variants using vcf2maf tool (https://github.com/mskcc/vcf2maf).  The vep annotated vcf of the somatic variants (output.vcf.gz) file was converted to maf using vcf2maf.",
-            "filter_group": "somatic",
-            "file_purpose": "Analysis view",
-            "optional": false,
-            "tumor_only_assay": true
-        },
-        {
             "file_path_template": "analysis/somatic/{run id}/{run id}_tnscope.output.twist.vcf",
             "short_description": "somatic variants: vcf file of somatic variants in TWIST targed capture region",
             "long_description": "VCF file of variants that fall within the TWIST excome capture regions.  bcftools is used to filter reads in output.vcf.gz that intersect with the TWIST capture regions.",
