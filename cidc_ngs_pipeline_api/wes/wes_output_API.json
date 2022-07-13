@@ -103,7 +103,7 @@
             "file_path_template": "analysis/cnvkit/{run id}/{run id}.call.cns",
             "short_description": "copynumber: CNVkit segments file",
             "long_description": "CNVkit's Segmented log2 ratios file. The 'cn' column representes the total copy number of the segment.  The other columns of the results file are described here (https://cnvkit.readthedocs.io/en/stable/fileformats.html#segmented-log2-ratios-cns)",
-            "filter_group": "clonality",
+            "filter_group": "copynumber",
             "file_purpose": "Analysis view",
             "optional": false,
             "tumor_only_assay": false
@@ -112,7 +112,7 @@
             "file_path_template": "analysis/cnvkit/{run id}/{run id}.call.enhanced.cns",
             "short_description": "copynumber: Enhanced CNVkit segments file with BAF and Major/minor allele information",
             "long_description": "The enhanced CNVkit segments file incoporates somatic sNP and tumor purity information (called by the pipeline) to incorporate B-allele frequencies, major and minor allele (cn1 and cn2 respectively), and correct for tumor sample purity level.",
-            "filter_group": "clonality",
+            "filter_group": "copynumber",
             "file_purpose": "Analysis view",
             "optional": false,
             "tumor_only_assay": false
@@ -121,7 +121,7 @@
             "file_path_template": "analysis/cnvkit/{run id}/{run id}.scatter.png",
             "short_description": "copynumber: scatter plot of log2 coverage and segmentation call information",
             "long_description": "Genome-wide scatter plot of log2 coverage ratios and called CNV segments",
-            "filter_group": "clonality",
+            "filter_group": "copynumber",
             "file_purpose": "Analysis view",
             "optional": false,
             "tumor_only_assay": false
@@ -130,7 +130,7 @@
             "file_path_template": "analysis/cnvkit/{run id}/{run id}_cnvkit_gainLoss.bed",
             "short_description": "copynumber: CNVkit segments file filtered with hard cut-offs to call regions of GAIN/LOSS",
             "long_description": "Filtered CNVkit segments file after applying a hard cut-off to call regions of GAIN (total copy number >= 3) and regions of LOSS (total copy number <= 1.5).",
-            "filter_group": "clonality",
+            "filter_group": "copynumber",
             "file_purpose": "Analysis view",
             "optional": false,
             "tumor_only_assay": false
