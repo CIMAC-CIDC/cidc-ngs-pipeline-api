@@ -6,7 +6,7 @@ from json import load
 
 __author__ = """Stephen C van Nostrand"""
 __email__ = "vannost@ds.dfci.harvard.edu"
-__version__ = "0.1.21"
+__version__ = "0.1.22"
 
 
 _API_ENDING = "_output_API.json"
@@ -26,5 +26,4 @@ for dname, _, files in os.walk(_BASE_DIR):
         if fname.endswith(_API_ENDING):
             analysis = fname[: -len(_API_ENDING)]
             with open(os.path.join(dname, fname), "rb") as f:
-                print(analysis)
                 OUTPUT_APIS[analysis] = load(f)
