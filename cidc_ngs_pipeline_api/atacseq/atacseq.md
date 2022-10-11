@@ -28,30 +28,28 @@ The main components of the CHIPs ATAC-seq pipline are:
 | Software         | Version | Source                | Notes               |
 |------------------|---------|-----------------------|---------------------|
 | snakemake        | 5.4.5   | bioconda              | Pipeline management |
-| samtools         | 1.9     | bioconda              |                     | 
-| python           | 3.6.8   | conda-forge           |                     |
+| samtools         | 1.10    | bioconda              |                     | 
+| python           | 3.6.12  | conda-forge           |                     |
 | r                | 3.5.1   | conda-forge           |                     |
-| numpy            | 1.16.3  | conda                 |                     |
-| bwa              | 0.7.17  | bioconda              | Alignment           |
-| picard           | 2.20.0  | bioconda              | Mark duplicates     |
+| numpy            | 1.19.5  | conda                 |                     |
+| bwa              | 0.7.15  | bioconda              | Alignment           |
+| picard           | 2.18.4  | bioconda              | Mark duplicates     |
 | bedtools         | 2.27.1  | bioconda              |                     |
-| gviz             | 1.26.4  | bioconda bioconductor |                     |
 | seqtk            | 1.3     | bioconda              |                     |
-| fastqc           | 0.11.8  | bioconda              |                     |
-| ggplot2          | 3.1.1   | conda-forge r         |                     |
-| reshape2         | 1.4.3   | conda-forge r         |                     |
-| git              | 2.21.0  | conda-forge           |                     |
+| fastqc           | 0.11.9  | bioconda              |                     |
+| ggplot2          | 3.3.0   | conda-forge r         |                     |
+| reshape2         | 1.4.4   | conda-forge r         |                     |
+| git              | 2.26.0  | conda-forge           |                     |
 | perl             | 5.26.2  | conda-forge           |                     |
-| homer            | 4.9.1   | bioconda              | Motif analysis      |
+| homer            | 4.11    | bioconda              | Motif analysis      |
 | weblogo          | 2.8.2   | bioconda              |                     |
 | seqLogo          | 1.50.0  | bioconda bioconductor |                     |
-| bedgraphtobigwig | 357     | bioconda ucsc         |                     |
-| bedsort          | 357     | bioconda ucsc         |                     |
-| seaborn          | 0.9.0   | conda-forge           |                     |
-| r.utils          | 2.8.0   | conda-forge r         |                     |
+| bedgraphtobigwig | 377     | bioconda ucsc         |                     |
+| bedsort          | 377     | bioconda ucsc         |                     |
+| seaborn          | 0.11.1  | conda-forge           |                     |
+| r.utils          | 2.9.2   | conda-forge r         |                     |
 | pybigwig         | 0.3.17  | bioconda              |                     |
-| numpy            | 1.15.4  | conda                 |                     |
 | cython           | 0.29.2  | conda                 |                     |
-| jinja2           | 2.10.3  | conda                 |                     |
-| macs2            | 2.2.4   | bioconda              | Peak calling        |
+| jinja2           | 2.11.2  | conda                 |                     |
+| macs2            | 2.2.7   | bioconda              | Peak calling        |
 | fastp            | 0.20.1  | bioconda              | Adaptor trimming    |
