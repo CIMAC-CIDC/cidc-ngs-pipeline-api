@@ -87,3 +87,15 @@ The following video describes decompressing and opening the report as well as ho
     * Clonal Proportionality Information
     * Average CDR3 Length
     * Unique CDR3 Count
+
+### Tools used
+
+The cidc version of VisualizIRR uses the following R based tools:
+* R version 3.5.2
+
+* data.table 1.12.8
+* immunarch 0.6.5
+* naturalsort 0.1.3
+* dplyr 1.0.0
+* rjson 0.2.20
+
