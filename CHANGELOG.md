@@ -9,6 +9,11 @@ This Changelog tracks changes to this project. The notes below include a summary
 - `fixed` for any bug fixes.
 - `security` in case of vulnerabilities.
 
+
+## 31 Oct 2022
+
+- `changed` updated structure in README
+
 ## Version `0.1.22` - 31 Aug 2022
 
 - `removed` unneeded print statement

@@ -17,11 +17,6 @@ Repository structure:
 │   │   ├── rna_output_API.json
 │   │   └── imgs
 │   |       └── RIMA.png
-│   ├── chips
-│   │   ├── chips.md
-│   │   ├── chips_output_API.json
-│   │   └── imgs
-│   |       └── chips.png
 │   ├── atacseq
 │   │   ├── atacseq.md
 │   │   ├── atacseq_output_API.json
@@ -43,7 +38,8 @@ Repository structure:
 │   └── test_apis.py
 ├── requirements.dev.txt
 ├── requirements.txt
-├── setup.cfg
+├── MANIFEST.in
+├── CHANGELOG.md
 ├── setup.py
 └── .github
     └── workflows
