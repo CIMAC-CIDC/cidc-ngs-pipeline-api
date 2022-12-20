@@ -9,10 +9,13 @@ This Changelog tracks changes to this project. The notes below include a summary
 - `fixed` for any bug fixes.
 - `security` in case of vulnerabilities.
 
+## Version `0.1.23` - 20 Dec 2022
+
+- `removed` ATACseq batch-level report
 
 ## 31 Oct 2022
 
-- `changed` updated structure in README
+- `changed` updated ATACseq structure in README
 
 ## Version `0.1.22` - 31 Aug 2022
 
