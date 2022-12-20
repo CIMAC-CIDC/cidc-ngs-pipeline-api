@@ -6,7 +6,7 @@ from json import load
 
 __author__ = """Stephen C van Nostrand"""
 __email__ = "vannost@ds.dfci.harvard.edu"
-__version__ = "0.1.22"
+__version__ = "0.1.23"
 
 
 _API_ENDING = "_output_API.json"
