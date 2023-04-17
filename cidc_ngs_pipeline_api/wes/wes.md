@@ -26,3 +26,21 @@ The CIDC whole-exome sequencing (WES) pipeline aims to identify and characterize
 | IEDB | 3.1.1 | [website](https://downloads.iedb.org/tools/mhci/3.1.1/)| Epitope database |
 | TcellExTRECT | commit ec81143 | [github](https://github.com/McGranahanLab/TcellExTRECT)| Epitope database |
 | MSIsensor2 | v0.1  | [github](https://github.com/niu-lab/msisensor2.git) |  Microsatellite instability |
+
+---
+## ExACdb assembly compatibility issue
+
+### Issue:
+The version of vcf2maf  (v1.6.18)  included in the CIDC WES pipeline uses ExACdb. CIDC WES uses the hg38 gene model. ExACdb is based on a hg19 reference, not hg38. Therefore some of the CIDC WES variants annotated by vcf2maf using ExACdb might not be accurate as the hg19/hg38 variant locations might be discrepant.
+
+### CIDC Portal Files Affected (WES only):
+The columns listed below in the output.twist.maf and output.twist.filtered.maf files.
+
+### MAF fields affected in these files:
+FILTER (though original FILTER flag is preserved; the ExAC_FILTER is added)
+
+ExAC_FILTER, ExAC_AF_Adj, ExAC_AC_AN_Adj, ExAC_AC_AN, ExAC_AC_AN_AFR, ExAC_AC_AN_AMR, ExAC_AC_AN_EAS, ExAC_AC_AN_FIN, ExAC_AC_AN_NFE, ExAC_AC_AN_OTH, ExAC_AC_AN_SAS
+
+Please see this [link](https://github.com/mskcc/vcf2maf/blob/47c4a18a15d5f93d4f3622615b3368448a74127d/docs/vep_maf_readme.txt) for more information about these fields.
+
+---
